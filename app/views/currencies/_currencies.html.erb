@@ -1,4 +1,4 @@
-<table id="datatable" cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered">
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered display">
   <thead>
     <tr>
       <th data-class="expand">Name</th>
@@ -10,16 +10,16 @@
   </thead>
 
   <tbody>
-    <% @currencies.each do |currency| %>
+    <% currencies.each do |currency| %>
       <tr>
-        <td><%= currency.name %></td>
-        <td><%= currency.region %></td>
-        <td><%= currency.weeklychange * 100 %>%</td>
-        <td><%= currency.monthlychange * 100 %>%</td>
-        <td><%= currency.yearlychange * 100%>%</td>
-        <!-- <td><%= link_to 'Show', currency %></td>
-        <td><%= link_to 'Edit', edit_currency_path(currency) %></td>
-        <td><%= link_to 'Destroy', currency, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+          <td><%= currency.name %></td>
+          <td><%= currency.region %></td>
+          <td><%= currency.weeklychange * 100 %>%</td>
+          <td><%= currency.monthlychange * 100 %>%</td>
+          <td><%= currency.yearlychange * 100%>%</td>
+          <!-- <td><%= link_to 'Show', currency %></td>
+          <td><%= link_to 'Edit', edit_currency_path(currency) %></td>
+          <td><%= link_to 'Destroy', currency, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
   </tbody>

@@ -4,12 +4,43 @@
   <h2>
     Get the most out of your currency
   </h2>
+  <br>
 
-  <div id="currencies"><%= render 'currencies' %></div>
+  <div id="tabs" class="tabs">
+    <nav>
+      <ul>
+        <li><a href="#section-1" class="icon-shop" type="submit" name="index" value="USD"><span>USD</span></a></li>
+        <li><a href="#section-2" class="icon-cup" type="submit" name="index" value="EUR"><span>EUR</span></a></li>
+        <li><a href="#section-3" class="icon-food" type="submit" name="index" value="GBP"><span>GBP</span></a></li>
+        <li><a href="#section-4" class="icon-lab" type="submit" name="index" value="RUB"><span>RUB</span></a></li>
+        <li><a href="#section-5" class="icon-truck" type="submit" name="index" value="CNY"><span>CNY</span></a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <section id="section-1">
+        <div id="currencies"><%= render 'currencies', :currencies => @USDcurrencies %></div>
+      </section>
+      <section id="section-2">
+        <div id="currencies"><%= render 'currencies', :currencies => @EURcurrencies %></div>
+      </section>
+      <section id="section-3">
+        <div id="currencies"><%= render 'currencies', :currencies => @GBPcurrencies %></div>
+      </section>
+      <section id="section-4">
+        <div id="currencies"><%= render 'currencies', :currencies => @RUBcurrencies %></div>
+      </section>
+      <section id="section-5">
+        <div id="currencies"><%= render 'currencies', :currencies => @CNYcurrencies %></div>
+      </section>
+    </div><!-- /content -->
+  </div><!-- /tabs -->
+  <script>
+      new CBPFWTabs( document.getElementById( 'tabs' ) );
+  </script>
 
   <br>
 
-  <%= link_to 'New Currency', new_currency_path %>
+
   <br>
   <%= link_to "Sign up for our newsletter", '#', class: "btn btn-large btn-primary" %>
 </div>

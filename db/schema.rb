@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140527182006) do
+ActiveRecord::Schema.define(version: 20140528075118) do
 
   create_table "currencies", force: true do |t|
     t.string   "name"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140527182006) do
     t.decimal  "yearlychange"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "currencyfor"
   end
 
 end

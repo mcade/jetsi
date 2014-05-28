@@ -16,6 +16,9 @@ gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-ra
 #make responsive datatables
 gem 'lodash-rails', '2.4.1'
 
+#font awesome
+gem 'font-awesome-sass', '4.1.0'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

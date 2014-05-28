@@ -8,7 +8,7 @@ jQuery ->
     tablet: 1024
     phone: 480
 
-  tableContainer = $('#datatable')
+  tableContainer = $('.display')
   tableContainer.dataTable
 
     bPaginate: false
@@ -17,12 +17,25 @@ jQuery ->
     bStateSave: false
     bFilter: false
     bInfo: false
+    aaSorting: [[
+      4
+      "desc"
+    ]]
+    aoColumnDefs: [
+      bSortable: false
+      aTargets: [0,1]
+    ]
 
     fnPreDrawCallback: ->
-      responsiveHelper = new ResponsiveDatatablesHelper(tableContainer, breakpointDefinition) unless responsiveHelper
+    
+      # Initialize the responsive datatables helper once.
+      @responsiveHelper = new ResponsiveDatatablesHelper(this, breakpointDefinition)  unless @responsiveHelper
+      return
 
-    fnRowCallback: (nRow, aData, iDisplayIndex, iDisplayIndexFull) ->
-      responsiveHelper.createExpandIcon nRow
+    fnRowCallback: (nRow) ->
+      @responsiveHelper.createExpandIcon nRow
+      return
 
     fnDrawCallback: (oSettings) ->
-      responsiveHelper.respond()
+      @responsiveHelper.respond()
+      return

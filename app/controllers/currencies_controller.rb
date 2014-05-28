@@ -6,7 +6,11 @@ class CurrenciesController < ApplicationController
   # GET /currencies
   # GET /currencies.json
   def index
-    @currencies = Currency.all
+    @USDcurrencies = Currency.where(:currencyfor => 'USD')
+    @EURcurrencies = Currency.where(:currencyfor => 'EUR')
+    @GBPcurrencies = Currency.where(:currencyfor => 'GBP')
+    @RUBcurrencies = Currency.where(:currencyfor => 'RUB')
+    @CNYcurrencies = Currency.where(:currencyfor => 'CNY')
   end
 
   # GET /currencies/1
@@ -71,7 +75,7 @@ class CurrenciesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def currency_params
-      params.require(:currency).permit(:name, :region, :weeklychange, :monthlychange, :yearlychange)
+      params.require(:currency).permit(:name, :region, :weeklychange, :monthlychange, :yearlychange, :currencyfor)
     end
 
 end
