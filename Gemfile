@@ -11,6 +11,10 @@ end
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'sprockets', '2.11.0'
 
+#datatables
+gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
+#make responsive datatables
+gem 'lodash-rails', '2.4.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
