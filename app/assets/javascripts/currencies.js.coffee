@@ -11,10 +11,12 @@ jQuery ->
   tableContainer = $('#datatable')
   tableContainer.dataTable
 
-    sPaginationType: "bootstrap"
+    bPaginate: false
     # Setup for responsive datatables helper.
     bAutoWidth: false
     bStateSave: false
+    bFilter: false
+    bInfo: false
 
     fnPreDrawCallback: ->
       responsiveHelper = new ResponsiveDatatablesHelper(tableContainer, breakpointDefinition) unless responsiveHelper
