@@ -18,4 +18,6 @@
 //= require dataTables/jquery.dataTables.bootstrap3
 //= require dataTables/jquery.dataTables.responsive
 //= require lodash
+//= require modernizr.custom
+//= require imagesloaded.pkgd.min
 //= require_tree .
