@@ -2,10 +2,6 @@
 
 /* universal */
 
-section {
-  overflow: auto;
-}
-
 textarea {
   resize: vertical;
 }
@@ -411,7 +407,7 @@ footer {
   margin: 0;
   padding: 20px;
   width: 100%;
-  background: #2E3444;
+  background: rgba(46, 52, 68, 0.85);
   color: #D3EEE2;
   text-align: right;
   text-transform: uppercase;
@@ -420,6 +416,9 @@ footer {
   font-size: 1em;
   -webkit-transition: -webkit-transform 0.2s, color 0.2s;
   transition: transform 0.2s, color 0.2s;
+}
+.grid li:last-child h3 {
+  background: rgb(114, 163, 207);
 }
 
 /* Pseudo element for hover effect */
@@ -718,7 +717,10 @@ footer {
   float: center;
 }
 
-.morph-button-modal-1 > button,
+.morph-button-modal-1 > button {
+  background-color: rgba(85, 52, 69, 0.85);
+  border: 2px solid rgba(85, 52, 69, 0.2)
+}
 .morph-button-modal-1 .morph-content {
   background-color: #553445;
 }
@@ -925,8 +927,34 @@ footer {
     right: 5px;
   }
 }
+/* shrink container for less than  360px */
+@media screen and (max-width: 360px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;  
+  }
+  #maindisplay {
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+  ul.grid, .grid li, .grid li img {
+    max-width: 100%;
+  }
+  .grid li:last-child, .grid li:last-child img {
+    height: 100px !important;
+  }
 
+}
 
+/* media query for 4 img grid */
+@media screen and (min-width: 1263px) {
+  .container {
+    width: 1260px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
 /* more custom */
 
 #maindisplay {
