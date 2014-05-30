@@ -253,7 +253,7 @@ footer {
     top: -0.5%;
     left: -0.5%;
     opacity: 0;
-    -webkit-transition: opacity 1s;
+    -webkit-transition: all 1s;
     -moz-transition: opacity 1s;
     transition: opacity 1s;
 }
@@ -264,7 +264,7 @@ footer {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
  
 /* ...and hide the images */
@@ -552,6 +552,381 @@ footer {
 }
 
 
+/* morphing buttons */
+/* Morph Button: Default Styles */
+
+.morph-button {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.morph-button > button {
+  position: relative;
+  padding: 0 1em;
+  border: none;
+  background-color: #e85657;
+  color: #f9f6e5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 80px;
+  overflow: hidden;
+}
+
+.morph-button.open > button {
+  pointer-events: none;
+}
+
+.morph-content {
+  pointer-events: none;
+}
+
+.morph-button.open .morph-content {
+  pointer-events: auto;
+}
+
+/* Common styles for overlay and modal type (fixed morph) */
+.morph-button-fixed,
+.morph-button-fixed .morph-content {
+  width: 200px;
+  height: 80px;
+}
+
+.morph-button-fixed > button {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.1s 0.5s;
+  transition: opacity 0.1s 0.5s;
+}
+
+.morph-button-fixed.open > button {
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.morph-button-fixed .morph-content {
+  position: fixed;
+  z-index: 900;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+  transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+.morph-button-fixed.open .morph-content {
+  opacity: 1;
+}
+
+.morph-button-fixed .morph-content > div {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
+  transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
+}
+
+.morph-button-fixed.open .morph-content > div {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s 0.5s;
+  transition: opacity 0.3s 0.5s;
+}
+
+.morph-button-fixed.active > button {
+  z-index: 2000;
+}
+
+.morph-button-fixed.active .morph-content {
+  z-index: 1900;
+}
+
+/* Transitions for overlay button and sidebar button */
+.morph-button-overlay .morph-content {
+  -webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+  transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+}
+
+.morph-button-overlay.open .morph-content {
+  -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+  transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s; 
+}
+
+/* Morph Button Style: Overlay */
+.morph-button.morph-button-overlay {
+  margin: 50px auto;
+}
+
+.morph-button-overlay .morph-content {
+  overflow: hidden;
+  background: #e85657;
+}
+
+.morph-button-overlay.open .morph-content {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  height: 100%;
+}
+
+/* Morph Button Style: Modal */
+.morph-button-modal::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  pointer-events: none;
+  -webkit-transform: translateZ(0px);
+}
+
+.morph-button-modal.open::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.morph-button-modal.active::before {
+  z-index: 1800;
+}
+
+.morph-button-modal .morph-content {
+  overflow: hidden;
+  -webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+  transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+.morph-button-modal.open .morph-content {
+  top: 50% !important;
+  left: 50% !important;
+  margin: -210px 0 0 -300px;
+  width: 600px;
+  height: 420px;
+  -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+  transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+/* Colors and sizes for individual modals */
+.morph-button.morph-button-modal-1 {
+  float: center;
+}
+
+.morph-button-modal-1 > button,
+.morph-button-modal-1 .morph-content {
+  background-color: #553445;
+}
+
+.morph-button-modal-1::before {
+  background: rgba(240,221,204,0.7);
+}
+
+/* Let's add some nice easing for all cases */
+.morph-button .morph-content,
+.morph-button.open .morph-content {
+  -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+/* Helper classes */
+.noscroll {
+  overflow: hidden;
+}
+
+.morph-button-overlay.scroll .morph-content {
+  overflow-y: scroll;
+}
+
+/* No JS fallback: let's hide the button and show the content */
+.no-js .morph-button > button {
+  display: none;
+}
+
+.no-js .morph-button {
+  margin: 10px 0;
+  float: none;
+}
+
+.no-js .morph-button,
+.no-js .morph-button .morph-content,
+.no-js .morph-button .morph-content > div {
+  position: relative;
+  width: auto;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  top: auto;
+  left: auto;
+  -webkit-transform: none;
+  transform: none;
+  pointer-events: auto;
+}
+
+.no-js .morph-button .morph-content .icon-close {
+  display: none;
+}
+
+.no-transition {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  .morph-button-modal.open .morph-content {
+    top: 0% !important;
+    left: 0% !important;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+    transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .morph-button-fixed,
+  .morph-button-fixed .morph-content {
+    width: 200px;
+    height: 80px;
+  }
+
+  .morph-button-fixed > button {
+    font-size: 75%;
+  }
+}
+
+/* morph button content */
+
+.icon-close {
+  z-index: 100;
+  display: block;
+  overflow: hidden;
+  width: 3em;
+  height: 4em;
+  text-align: center;
+  line-height: 3;
+  cursor: pointer;
+  margin: 0 auto;
+
+}
+
+.icon:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-transform: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-family: 'FontAwesome';
+  font-size: 2em;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close::before {
+  content: "\f1d8";
+  color: lightblue;
+}
+
+.icon-close:hover {
+  color: #a50a05;
+}
+
+/* Styles for content */
+/* Style for overlay */
+
+.content-style-overlay {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.content-style-overlay h2 {
+  margin: 0 0 1em 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 3em;
+}
+
+.content-style-overlay p {
+  margin: 0 auto;
+  padding: 10px 0;
+  max-width: 700px;
+  text-align: justify;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.content-style-overlay .icon-close {
+  border: 2px solid #f9e1c9;
+  border-radius: 50%;
+  line-height: 2.8;
+}
+
+.content-style-overlay .icon-close:hover {
+  border-color: #a50a05;  
+}
+
+/* Style for text modal */
+.content-style-text {
+  padding: 60px;
+  text-align: left;
+}
+
+.content-style-text h2 {
+  margin: 0 0 0.5em 0;
+  font-weight: 300;
+  font-size: 1.85em;
+  color: #fefefe;
+}
+
+.content-style-text p {
+  color: rgba(255,255,255,0.5);
+  font-weight: 300;
+  font-size: 1.15em;
+  line-height: 1.4;
+}
+
+.content-style-text label {
+    padding: 10px;
+    color: #f9e1c9;
+    font-weight: bold;
+}
+
+.content-style-text .icon-close {
+  top: 0;
+  right: 0;
+  color: rgba(0,0,0,0.2);
+}
+
+.content-style-text .icon-close:hover {
+  color: #f9e1c9;
+}
+
+
+@media screen and (max-width: 770px) {
+  .content-style-overlay {
+    font-size: 75%;
+  }
+
+  .content-style-overlay .icon-close {
+    top: 5px;
+    right: 5px;
+  }
+}
+
+
 /* more custom */
 
 #maindisplay {
@@ -564,3 +939,4 @@ table.dataTable.order-column tbody tr > .sorting_2,
 table.dataTable.order-column tbody tr > .sorting_3 {
   background-color: #f9f9f9;
 }
+
