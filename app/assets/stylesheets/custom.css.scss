@@ -201,13 +201,13 @@ footer {
 /* Example media queries */
  
 @media screen and (max-width: 52.375em) {
-    .tabs nav a span {
-        display: none;
-    }
- 
-    .tabs nav a:before {
-        margin-right: 0;
-    }
+  .tabs nav a span {
+      display: none;
+  }
+
+  .tabs nav a:before {
+      margin-right: 0;
+  }
 }
  
 @media screen and (max-width: 32em) {
@@ -225,6 +225,10 @@ footer {
 
   .tabs nav ul li:last-child {
       border-right: none;
+  }
+  #buyingpower {
+    float: none !important;
+    text-align: center;
   }
 }
 
@@ -943,17 +947,31 @@ footer {
   .grid li:last-child, .grid li:last-child img {
     height: 100px !important;
   }
+  .connect {
+    font-size: 1.2em !important;
+    a {
+      font-size: .7em !important;
+    }
+  }
 
 }
 
+
 /* media query for 4 img grid */
-@media screen and (min-width: 1263px) {
+@media screen and (min-width: 1281px) {
   .container {
     width: 1260px;
     padding-left: 0;
     padding-right: 0;
   }
 
+}
+
+/* resize background for social connect tab */
+@media screen and (max-width: 991px) {
+  .connect {
+    width: 100% !important;
+  }
 }
 /* more custom */
 
@@ -976,4 +994,47 @@ table.dataTable.order-column tbody tr > .sorting_3 {
 .navbar-brand {
   font-size: 1.5em;
   color: rgb(90, 90, 90) !important;
+}
+
+/* accordion */
+#accordion .panel, #accordion .panel .panel-heading {
+  background-color: rgba(245, 245, 245, 0.85);
+}
+
+/* buying power popover */
+#buyingpower {
+  float: right;
+}
+.popover.bottom > .arrow {
+  border-bottom-color: #999999 !important;
+}
+
+/* connect section */
+.connect {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 2em;
+  background-color: rgba(120, 100, 100, 0.5);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0 auto;
+  width: 32em;
+  span {
+    color: whitesmoke;
+    
+    padding: 4px;
+  }
+  .fa {
+    vertical-align: middle;
+  }
+  .fa-facebook-square {
+    color: #3B5998;
+  }
+  .fa-twitter-square {
+    color: #55ACEE;
+  }
+  a {
+    font-size: .8em;
+  }
 }
