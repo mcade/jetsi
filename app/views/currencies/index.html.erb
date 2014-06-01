@@ -1,10 +1,10 @@
 <div class="center jumbotron" id="maindisplay">
-  <h1>The Tourist Exchange</h1>
-
   <h2>
-    Get the most out of your currency
+    Get the most out of your currency while traveling abroad
   </h2>
-  <br>
+
+  <h3>(select your home currency from below)</h3>
+  
 
   <div id="tabs" class="tabs">
     <nav>
@@ -18,18 +18,23 @@
     </nav>
     <div class="content">
       <section id="section-1">
+        <h2>Changes in exchange rates relative to US Dollars</h2>
         <div id="currencies"><%= render 'currencies', :currencies => @USDcurrencies %></div>
       </section>
       <section id="section-2">
+        <h2>Changes in exchange rates relative to EU Euros</h2>
         <div id="currencies"><%= render 'currencies', :currencies => @EURcurrencies %></div>
       </section>
       <section id="section-3">
+        <h2>Changes in exchange rates relative to US Dollars</h2>
         <div id="currencies"><%= render 'currencies', :currencies => @GBPcurrencies %></div>
       </section>
       <section id="section-4">
+        <h2>Changes in exchange rates relative to US Dollars</h2>
         <div id="currencies"><%= render 'currencies', :currencies => @RUBcurrencies %></div>
       </section>
       <section id="section-5">
+        <h2>Changes in exchange rates relative to US Dollars</h2>
         <div id="currencies"><%= render 'currencies', :currencies => @CNYcurrencies %></div>
       </section>
     </div><!-- /content -->
@@ -39,9 +44,6 @@
   </script>
 
   <br>
-
-  <br>
-  
 </div>
 
 <div class="connect">
@@ -57,11 +59,11 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          What You Need to Know
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;What You Need to Know<i class="fa fa-plus-square iconright"></i>
         </a>
       </h4>
     </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
+    <div id="collapseOne" class="panel-collapse collapse">
       <div class="panel-body">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
       </div>
@@ -71,7 +73,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          Getting the Best Rate
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;Getting the Best Rate<i class="fa fa-plus-square iconright"></i>
         </a>
       </h4>
     </div>
@@ -85,7 +87,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          Getting the Best Value
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;Getting the Best Value<i class="fa fa-plus-square iconright"></i>
         </a>
       </h4>
     </div>

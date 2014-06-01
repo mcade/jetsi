@@ -68,7 +68,7 @@ footer {
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin: 1em 0 2em;
+    margin: 1em 0 0;
     font-weight: 300;
 }
  
@@ -85,7 +85,7 @@ footer {
 }
  
 .tabs nav ul li {
-    border: 1px solid #becbd2;
+    border: 1px solid rgba(130, 149, 158, 0.6);
     border-bottom: none;
     margin: 0 0.25em;
     display: block;
@@ -94,8 +94,8 @@ footer {
 }
  
 .tabs nav li.tab-current {
-    border: 1px solid #47a3da;
-    box-shadow: inset 0 2px #47a3da;
+    border: 1px solid darkblue;
+    box-shadow: inset 0 2px darkblue;
     border-bottom: none;
     z-index: 100;
 }
@@ -108,7 +108,7 @@ footer {
     right: 100%;
     bottom: 0;
     width: 1000px;
-    background: #47a3da;
+    background: darkblue;
 }
  
 .tabs nav li.tab-current:after {
@@ -118,7 +118,7 @@ footer {
 }
  
 .tabs nav a {
-    color: #becbd2;
+    color: #2D7275;
     display: block;
     font-size: 1.45em;
     line-height: 2.5;
@@ -131,7 +131,7 @@ footer {
 }
  
 .tabs nav li.tab-current a {
-    color: #47a3da;
+  color: darkblue;
 }
  
 /* Icons */
@@ -171,7 +171,7 @@ footer {
 /* Content */
 .content section {
     font-size: 1.25em;
-    padding: 3em 1em;
+    padding: 1em 1em 0;
     display: none;
     max-width: 1230px;
     margin: 0 auto;
@@ -191,7 +191,7 @@ footer {
 .no-js .content section {
     display: block;
     padding-bottom: 2em;
-    border-bottom: 1px solid #47a3da;
+    border-bottom: 1px solid darkblue;
 }
  
 .content section.content-current {
@@ -973,11 +973,66 @@ footer {
     width: 100% !important;
   }
 }
+
+/* change header font size for super narrow screens */
+@media screen and (max-width: 251px) {
+  .navbar-brand {
+    font-size: 1.4em !important;
+  }
+}
+
+/* adjust table title */
+@media screen and (max-width: 729px) {
+  #maindisplay .content section h2 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 388px) {
+  #maindisplay .content section h2 {
+    font-size: 1em;
+  }
+}
+
+/* font adjustsments in general */
+@media screen and (max-width: 471px) {
+  #maindisplay h3 {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 458px) {
+  #maindisplay h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 259px) {
+  .iconright {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .content-style-text {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
 /* more custom */
 
 #maindisplay {
   background-color: rgba(233,222,222,0.7);
+  padding: 10px 0 0 0;
+  margin-top: 3%;
+  margin-bottom: 10%;
 }
+
+table {
+  background-color: rgba(170, 174, 184, 0.5);
+  thead {
+    background-color: rgba(245, 209, 96, 0.5);
+  }
+}
+
 
 /* order-column highlight */
 table.dataTable.order-column tbody tr > .sorting_1,
@@ -1037,4 +1092,35 @@ table.dataTable.order-column tbody tr > .sorting_3 {
   a {
     font-size: .8em;
   }
+}
+
+/* use font awesome plus and minus instead of default */
+table.has-columns-hidden > tbody > tr > td > span.responsiveExpander {
+    cursor: pointer;
+    padding-left: 22px;
+}
+table.has-columns-hidden > tbody > tr > td > span.responsiveExpander:before{
+    content: "";
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #018fe1;
+    left: 0;
+    top: -3px;
+    position: absolute;
+}
+table.has-columns-hidden > tbody > tr > td > span.responsiveExpander:hover:before, table.has-columns-hidden > tbody > tr > td > span.responsiveExpander:focus:before{
+    color: #457886;
+}
+table.has-columns-hidden > tbody > tr.detail-show > td span.responsiveExpander:before {
+    content: "";
+}
+table.has-columns-hidden > tbody > tr > td:first-of-type  *{
+    position: relative;
+}
+table.has-columns-hidden > tbody > tr > td > span.responsiveExpander, table.has-columns-hidden > tbody > tr.detail-show > td span.responsiveExpander {
+  background: initial;
+}
+
+.iconright {
+  float: right;
 }
