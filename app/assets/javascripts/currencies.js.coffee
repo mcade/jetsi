@@ -11,20 +11,29 @@ jQuery ->
   tableContainer = $('.display')
   tableContainer.dataTable
 
-    bPaginate: false
+    bPaginate: true
     # Setup for responsive datatables helper.
     bAutoWidth: false
     bStateSave: false
-    bFilter: false
+    # bFilter: false
     bInfo: false
     aaSorting: [[
       4
       "desc"
     ]]
+
     aoColumnDefs: [
-      bSortable: false
-      aTargets: [0,1]
+      {
+        sType: "numeric-comma"
+        aTargets: [4]
+      }
+
+      {
+        bSortable: false
+        aTargets: [0,1]
+      }
     ]
+ 
 
     fnPreDrawCallback: ->
     

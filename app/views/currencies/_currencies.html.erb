@@ -18,17 +18,34 @@
             <% unless currency.weeklychange < 0 %>
               +
             <% end %>
-            <%= currency.weeklychange * 100 %>%</td>
+            <%= currency.weeklychange * 100 %>%
+            <% if currency.weeklychange > 0 %>
+              <i class="fa fa-arrow-up iconright iconup"></i>
+            <% else %>
+              <i class="fa fa-arrow-down iconright icondown"></i>
+            <% end %>
+          </td>
           <td>
             <% unless currency.monthlychange < 0 %>
               +
             <% end %>
-            <%= currency.monthlychange * 100 %>%</td>
+            <%= currency.monthlychange * 100 %>%
+            <% if currency.monthlychange > 0 %>
+              <i class="fa fa-arrow-up iconright iconup"></i>
+            <% else %>
+              <i class="fa fa-arrow-down iconright icondown"></i>
+            <% end %>
+          </td>
           <td>
             <% unless currency.yearlychange < 0 %>
               +
             <% end %>
-            <%= currency.yearlychange * 100%>%
+            <%= currency.yearlychange  * 100 %>% 
+            <% if currency.yearlychange > 0 %>
+              <i class="fa fa-arrow-up iconright iconup"></i>
+            <% else %>
+              <i class="fa fa-arrow-down iconright icondown"></i>
+            <% end %>
           </td>
           <!-- <td><%= link_to 'Show', currency %></td>
           <td><%= link_to 'Edit', edit_currency_path(currency) %></td>

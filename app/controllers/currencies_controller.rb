@@ -9,7 +9,7 @@ class CurrenciesController < ApplicationController
     @USDcurrencies = Currency.where(:currencyfor => 'USD')
     @EURcurrencies = Currency.where(:currencyfor => 'EUR')
     @GBPcurrencies = Currency.where(:currencyfor => 'GBP')
-    @RUBcurrencies = Currency.where(:currencyfor => 'RUB')
+    @JPYcurrencies = Currency.where(:currencyfor => 'JPY')
     @CNYcurrencies = Currency.where(:currencyfor => 'CNY')
   end
 
@@ -65,6 +65,12 @@ class CurrenciesController < ApplicationController
       format.html { redirect_to currencies_url }
       format.json { head :no_content }
     end
+  end
+
+  #import csv file
+  def import
+   Currency.import(params[:file])
+   redirect_to :back, notice: "Exchange rates imported."
   end
 
   private

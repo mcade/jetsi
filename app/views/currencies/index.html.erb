@@ -1,7 +1,7 @@
 <div class="center jumbotron" id="maindisplay">
-  <h2>
+  <h1>
     Get the most out of your currency while traveling abroad
-  </h2>
+  </h1>
 
   <h3>(select your home currency from below)</h3>
   
@@ -12,7 +12,7 @@
         <li><a href="#section-1" class="icon-shop" type="submit" name="index" value="USD"><span>USD</span></a></li>
         <li><a href="#section-2" class="icon-cup" type="submit" name="index" value="EUR"><span>EUR</span></a></li>
         <li><a href="#section-3" class="icon-food" type="submit" name="index" value="GBP"><span>GBP</span></a></li>
-        <li><a href="#section-4" class="icon-lab" type="submit" name="index" value="RUB"><span>RUB</span></a></li>
+        <li><a href="#section-4" class="icon-lab" type="submit" name="index" value="JPY"><span>JPY</span></a></li>
         <li><a href="#section-5" class="icon-truck" type="submit" name="index" value="CNY"><span>CNY</span></a></li>
       </ul>
     </nav>
@@ -31,7 +31,7 @@
       </section>
       <section id="section-4">
         <h2>Changes in exchange rates relative to US Dollars</h2>
-        <div id="currencies"><%= render 'currencies', :currencies => @RUBcurrencies %></div>
+        <div id="currencies"><%= render 'currencies', :currencies => @JPYcurrencies %></div>
       </section>
       <section id="section-5">
         <h2>Changes in exchange rates relative to US Dollars</h2>
@@ -50,7 +50,7 @@
   <span>Get the latest tourist exchange rate news and tips</span><br>
   <i class="fa fa-facebook-square fa-2x"></i>&nbsp;
   <i class="fa fa-twitter-square fa-2x"></i>&nbsp;
-  <%= link_to "Sign up for our newsletter", '#', class: "btn btn-large btn-primary" %>
+  <%= link_to 'Subscribe <i class="fa fa-envelope"></i>'.html_safe, '#', class: "btn btn-large btn-primary subscribe" %>
 </div>
 
 

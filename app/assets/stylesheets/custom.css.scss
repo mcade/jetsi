@@ -1,7 +1,61 @@
 @import "bootstrap";
 
-/* universal */
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('/assets/FiraSans-Hair.eot');
+    src: local('Fira Sans Hair'),
+         url('/assets/FiraSans-Hair.eot') format('embedded-opentype'),
+         url('/assets/FiraSans-Hair.woff') format('woff'),
+         url('/assets/FiraSans-Hair.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('/assets/FiraSans-UltraLight.eot');
+    src: local('Fira Sans UltraLight'),
+         url('/assets/FiraSans-UltraLight.eot') format('embedded-opentype'),
+         url('/assets/FiraSans-UltraLight.woff') format('woff'),
+         url('/assets/FiraSans-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('/assets/FiraSans-Light.eot');
+    src: local('Fira Sans Light'),
+         url('/assets/FiraSans-Light.eot') format('embedded-opentype'),
+         url('/assets/FiraSans-Light.woff') format('woff'),
+         url('/assets/FiraSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('/assets/FiraSans-Regular.eot');
+    src: local('Fira Sans Regular'),
+         url('/assets/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('/assets/FiraSans-Regular.woff') format('woff'),
+         url('/assets/FiraSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('/assets/FiraSans-Bold.eot');
+    src: local('Fira Sans Bold'),
+         url('/assets/FiraSans-Bold.eot') format('embedded-opentype'),
+         url('/assets/FiraSans-Bold.woff') format('woff'),
+         url('/assets/FiraSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
+
+/* universal */
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
 textarea {
   resize: vertical;
 }
@@ -94,8 +148,8 @@ footer {
 }
  
 .tabs nav li.tab-current {
-    border: 1px solid darkblue;
-    box-shadow: inset 0 2px darkblue;
+    border: 1px solid rgba(0, 0, 139, 0.4);
+    box-shadow: inset 0 2px rgba(0, 0, 139, 0.4);
     border-bottom: none;
     z-index: 100;
 }
@@ -108,7 +162,7 @@ footer {
     right: 100%;
     bottom: 0;
     width: 1000px;
-    background: darkblue;
+    background: rgba(0, 0, 139, 0.4);
 }
  
 .tabs nav li.tab-current:after {
@@ -131,7 +185,7 @@ footer {
 }
  
 .tabs nav li.tab-current a {
-  color: darkblue;
+  color: rgba(1, 97, 55, 0.8);
 }
  
 /* Icons */
@@ -153,7 +207,7 @@ footer {
 }
  
 .icon-lab:before {
-    content: "\f158";
+    content: "\f157";
 }
  
 .icon-cup:before {
@@ -318,27 +372,6 @@ footer {
   display: block;
 }
 
-/* Title box */
-.title-box h2 {
-  display: block;
-  margin: 7px;
-  padding: 20px;
-  background: #2E3444;
-  color: #D3EEE2;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 300;
-}
-
-.title-box h2 a {
-  display: block;
-  font-weight: 900;
-}
-
-.title-box h2 a:hover {
-  color: #D3EEE2;
-}
-
 /* Anchor and image */
 .grid li > a,
 .grid li img {
@@ -416,7 +449,7 @@ footer {
   text-align: right;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 1em;
   -webkit-transition: -webkit-transform 0.2s, color 0.2s;
   transition: transform 0.2s, color 0.2s;
@@ -572,7 +605,7 @@ footer {
   color: #f9f6e5;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 100;
   line-height: 80px;
   overflow: hidden;
 }
@@ -948,9 +981,15 @@ footer {
     height: 100px !important;
   }
   .connect {
-    font-size: 1.2em !important;
+    font-size: 1.5em !important;
     a {
-      font-size: .7em !important;
+      font-size: 1.1em !important;
+    }
+    .fa-facebook-square {
+      font-size: 3em;
+    }
+    .fa-twitter-square {
+      font-size: 3em;
     }
   }
 
@@ -1000,7 +1039,7 @@ footer {
   }
 }
 @media screen and (max-width: 458px) {
-  #maindisplay h2 {
+  #maindisplay h1 {
     font-size: 1.5em;
     margin-top: 0;
   }
@@ -1024,6 +1063,9 @@ footer {
   padding: 10px 0 0 0;
   margin-top: 3%;
   margin-bottom: 10%;
+  h1 {
+    font-weight: 200;
+  }
 }
 
 table {
@@ -1049,11 +1091,15 @@ table.dataTable.order-column tbody tr > .sorting_3 {
 .navbar-brand {
   font-size: 1.5em;
   color: rgb(90, 90, 90) !important;
+  font-weight: 300;
 }
 
 /* accordion */
 #accordion .panel, #accordion .panel .panel-heading {
   background-color: rgba(245, 245, 245, 0.85);
+  h4 {
+    font-weight: 400;
+  }
 }
 
 /* buying power popover */
@@ -1075,6 +1121,7 @@ table.dataTable.order-column tbody tr > .sorting_3 {
   border-top-right-radius: 10px;
   margin: 0 auto;
   width: 32em;
+  font-weight: 300;
   span {
     color: whitesmoke;
     
@@ -1123,4 +1170,33 @@ table.has-columns-hidden > tbody > tr > td > span.responsiveExpander, table.has-
 
 .iconright {
   float: right;
+  &.iconup {
+    color: rgba(0,128,0,0.7);
+    margin-right: 5%;
+  }
+  &.icondown {
+    color: rgba(255,0,0,0.7);
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 497px) {
+  .row-detail .iconup, .row-detail .icondown {
+    display: none;
+  }
+}
+
+#maindisplay h3 {
+  font-weight: 300;
+}
+
+#maindisplay .content section h2 {
+  font-family: sans-serif;
+}
+
+tbody {
+  font-weight: 400;
+}
+
+.subscribe {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
