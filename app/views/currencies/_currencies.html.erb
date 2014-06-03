@@ -1,10 +1,11 @@
 <table cellpadding="0" cellspacing="0" border="0" class="table table-bordered display order-column table-hover">
   <thead>
     <tr>
-      <th data-class="expand">Name</th>
-      <th data-hide="phone,tablet">Region</th>
-      <th data-hide="phone">Weekly Change</th>
-      <th data-hide="phone">Monthly Change</th>
+      <th data-class="expand">Symbol</th>
+      <th data-hide="phone">Country</th>
+      <th data-hide="phone,tablet">Cost of Living</th>
+      <th data-hide="phone">Avg. Big Mac Price</th>
+      <th data-hide="phone,tablet">Monthly Change</th>
       <th>Yearly Change</th>
     </tr>
   </thead>
@@ -12,24 +13,15 @@
   <tbody>
     <% currencies.each do |currency| %>
       <tr>
+          <td><%= currency.currencyname %></td>
           <td><%= currency.name %></td>
-          <td><%= currency.region %></td>
-          <td>
-            <% unless currency.weeklychange < 0 %>
-              +
-            <% end %>
-            <%= currency.weeklychange * 100 %>%
-            <% if currency.weeklychange > 0 %>
-              <i class="fa fa-arrow-up iconright iconup"></i>
-            <% else %>
-              <i class="fa fa-arrow-down iconright icondown"></i>
-            <% end %>
-          </td>
+          <td><a href="<%= currency.livingcost %>" target="_blank"><i class="fa fa-external-link fa-lg"></i></a></td>
+          <td><%= number_to_currency(currency.bmi, unit: symbol) %></td>
           <td>
             <% unless currency.monthlychange < 0 %>
               +
             <% end %>
-            <%= currency.monthlychange * 100 %>%
+            <%= number_to_percentage(currency.monthlychange, precision: 2) %>
             <% if currency.monthlychange > 0 %>
               <i class="fa fa-arrow-up iconright iconup"></i>
             <% else %>
@@ -40,7 +32,7 @@
             <% unless currency.yearlychange < 0 %>
               +
             <% end %>
-            <%= currency.yearlychange  * 100 %>% 
+            <%= number_to_percentage(currency.yearlychange, precision: 2) %> 
             <% if currency.yearlychange > 0 %>
               <i class="fa fa-arrow-up iconright iconup"></i>
             <% else %>

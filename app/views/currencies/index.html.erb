@@ -1,6 +1,6 @@
 <div class="center jumbotron" id="maindisplay">
   <h1>
-    Get the most out of your currency while traveling abroad
+    Get the most out of your currency when traveling abroad
   </h1>
 
   <h3>(select your home currency from below)</h3>
@@ -18,24 +18,24 @@
     </nav>
     <div class="content">
       <section id="section-1">
-        <h2>Changes in exchange rates relative to US Dollars</h2>
-        <div id="currencies"><%= render 'currencies', :currencies => @USDcurrencies %></div>
+        <h2>Changes in exchange rates relative to the US Dollar</h2>
+        <div id="currencies"><%= render 'currencies', :currencies => @USDcurrencies, :symbol => "$ " %></div>
       </section>
       <section id="section-2">
-        <h2>Changes in exchange rates relative to EU Euros</h2>
-        <div id="currencies"><%= render 'currencies', :currencies => @EURcurrencies %></div>
+        <h2>Changes in exchange rates relative to the Euro</h2>
+        <div id="currencies"><%= render 'currencies', :currencies => @EURcurrencies, :symbol => "€ " %></div>
       </section>
       <section id="section-3">
-        <h2>Changes in exchange rates relative to US Dollars</h2>
-        <div id="currencies"><%= render 'currencies', :currencies => @GBPcurrencies %></div>
+        <h2>Changes in exchange rates relative to the Pound</h2>
+        <div id="currencies"><%= render 'currencies', :currencies => @GBPcurrencies, :symbol => "£ " %></div>
       </section>
       <section id="section-4">
-        <h2>Changes in exchange rates relative to US Dollars</h2>
-        <div id="currencies"><%= render 'currencies', :currencies => @JPYcurrencies %></div>
+        <h2>Changes in exchange rates relative to the Japanese Yen</h2>
+        <div id="currencies"><%= render 'currencies', :currencies => @JPYcurrencies, :symbol => "¥ " %></div>
       </section>
       <section id="section-5">
-        <h2>Changes in exchange rates relative to US Dollars</h2>
-        <div id="currencies"><%= render 'currencies', :currencies => @CNYcurrencies %></div>
+        <h2>Changes in exchange rates relative to the Chinese Yuan</h2>
+        <div id="currencies"><%= render 'currencies', :currencies => @CNYcurrencies, :symbol => "¥ " %></div>
       </section>
       <div id="buyingpower">
         <button type="button" class="btn btn-info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
@@ -113,6 +113,9 @@
   </div>
 </div>
 
+<div class="ourchoice center">
+  <h1>Travellers Choice<br><span class="glyphicon glyphicon-chevron-down"></span></h1>
+</div>
 <section class="grid-wrap">
   <ul class="grid swipe-right" id="grid">
     <li><a href="#"><img src="assets/pyramids2.png" alt="Egyptian pyramids"><h3>Egyptian pyramids</h3></a></li>
@@ -136,7 +139,7 @@
   <div class="morph-content">
     <div>
       <div class="content-style-text">
-        <h2>About The Tourist Exchange</h2>
+        <h2>Foreign Savvy</h2>
         <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut juccama green bean celtuce collard greens avocado quandong <strong>fennel gumbo</strong> black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea <strong>tomato spring onion</strong> azuki bean gourd.</p>
         <span class="icon icon-close"></span>
       </div>

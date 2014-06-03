@@ -25,19 +25,28 @@ jQuery ->
     # bFilter: false
     bInfo: false
     aaSorting: [[
-      4
+      5
       "desc"
     ]]
 
     aoColumnDefs: [
       {
         sType: "numeric-comma"
-        aTargets: [4]
+        aTargets: [3,4,5]
       }
 
       {
         bSortable: false
+        aTargets: [0,1,2]
+      }
+
+      {
+        sClass: "alignleft"
         aTargets: [0,1]
+      }
+      {
+        sClass: "bigmacwidth"
+        aTargets: [3]
       }
     ]
  

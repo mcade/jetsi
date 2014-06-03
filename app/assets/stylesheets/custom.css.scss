@@ -63,6 +63,12 @@ textarea {
 .center {
   text-align: center;
 }
+.alignleft {
+  text-align: left;
+}
+.bigmacwidth {
+  min-width: 100px;
+}
 
 .center h1 {
   margin-bottom: 10px;
@@ -1009,12 +1015,6 @@ footer {
   }
 }
 
-/* change header font size for super narrow screens */
-@media screen and (max-width: 251px) {
-  .navbar-brand {
-    font-size: 1.4em !important;
-  }
-}
 
 /* adjust table title */
 @media screen and (max-width: 729px) {
@@ -1217,5 +1217,21 @@ div.dataTables_paginate {
 @media screen and (min-width: 450px) {
   .input-group-addon {
     width: auto;
+  }
+}
+
+.ourchoice {
+  color: azure;
+  background-color: rgba(172, 63, 142, 0.5);
+  width: 200px;
+  margin: 10% auto 0 auto;
+  border-radius: 6px;
+  h1 {
+    padding-top: 13px;
+    font-size: 32px;
+    font-weight: 200;
+  }
+  span {
+    color: coral;
   }
 }
