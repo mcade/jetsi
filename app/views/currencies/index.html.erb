@@ -37,10 +37,24 @@
         <h2>Changes in exchange rates relative to US Dollars</h2>
         <div id="currencies"><%= render 'currencies', :currencies => @CNYcurrencies %></div>
       </section>
+      <div id="buyingpower">
+        <button type="button" class="btn btn-info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          How to use this chart&nbsp;
+          <i class="fa fa-question-circle fa-lg"></i>
+        </button><script>$(function () { $("[data-toggle='popover']").popover(); });</script>
+      </div>
     </div><!-- /content -->
   </div><!-- /tabs -->
   <script>
       new CBPFWTabs( document.getElementById( 'tabs' ) );
+  </script>
+  <script>
+    $( document ).ready(function() {
+      var $newdiv1 = $( "<div class='input-group'>"),
+        $newspan1 = $( "<span class='input-group-addon glyphicon glyphicon-search'/>");
+      $('div.dataTables_filter label').prepend( $newspan1 ).addClass("input-group");
+      $('div.dataTables_filter input').addClass("form-control").attr("placeholder", "search");
+    });
   </script>
 
   <br>

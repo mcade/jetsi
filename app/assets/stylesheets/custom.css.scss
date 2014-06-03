@@ -280,10 +280,6 @@ footer {
   .tabs nav ul li:last-child {
       border-right: none;
   }
-  #buyingpower {
-    float: none !important;
-    text-align: center;
-  }
 }
 
 /* background */
@@ -1104,7 +1100,7 @@ table.dataTable.order-column tbody tr > .sorting_3 {
 
 /* buying power popover */
 #buyingpower {
-  float: right;
+  text-align: center;
 }
 .popover.bottom > .arrow {
   border-bottom-color: #999999 !important;
@@ -1199,4 +1195,27 @@ tbody {
 
 .subscribe {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div.dataTables_filter label {
+  float: left;
+  font-weight: 300;
+}
+
+.glyphicon.glyphicon-search {
+  top: 0;
+}
+
+.bottom .pagination {
+  font-size: 0.8em;
+}
+
+div.dataTables_paginate {
+  margin-top: -2px;
+}
+
+@media screen and (min-width: 450px) {
+  .input-group-addon {
+    width: auto;
+  }
 }

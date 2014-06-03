@@ -15,6 +15,13 @@ jQuery ->
     # Setup for responsive datatables helper.
     bAutoWidth: false
     bStateSave: false
+    bLengthChange: false
+    sDom: '<"top">rt<"bottom"fp><"clear">'
+    oLanguage:
+      sSearch: ""
+      oPaginate:
+        sNext: ""
+        sPrevious: ""
     # bFilter: false
     bInfo: false
     aaSorting: [[

@@ -81,7 +81,7 @@ class CurrenciesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def currency_params
-      params.require(:currency).permit(:name, :region, :weeklychange, :monthlychange, :yearlychange, :currencyfor)
+      params.require(:currency).permit(:name, :region, :weeklychange, :monthlychange, :yearlychange, :currencyfor, :livingcost, :bmi, :currencyname)
     end
 
 end
