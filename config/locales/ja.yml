@@ -1,0 +1,37 @@
+ja:
+  language:  "言語"
+  jumbotron:
+    title:  "海外旅行時にご希望の通貨を最大限に活用"
+    directions:  "下からご自宅の通貨を選択"
+    section1:  "米ドルに対する為替レートの変動"
+    section2:  "ユーロと比較して為替レートの変動"
+    section3:  "ポンドと比較して為替レートの変動"
+    section4:  "日本円相対為替レートの変動"
+    section5:  "人民元を基準に為替レートの変動"
+    table:
+      symbol:  "シンボル"
+      country:  "国"
+      costofliving:  "生活費"
+      bigmac:  "平均ビッグマックの価格"
+      month:  "前月差"
+      year:  "年次変化"
+      directions:  "このチャートを使用する方法"
+      info:  "Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+      search:  "検索"
+  connect:
+    title:  "最新の観光客の為替相場のニュースやヒントを得る"
+    subscribe:  "購読する"
+  panels:
+    title1:  "あなたが知っておくべきこと"
+    body1:  "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+    title2:  "ベストレートを取得する"
+    body2:  "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+    title3:  "最高の価値を取得する"
+    body3:  "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+  ourchoice:
+    title:  "旅行者の選択"
+    illustrations:  "イラストによる"
+  about:
+    title:  "約"
+    text:  "Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut juccama green bean celtuce collard greens avocado quandong black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea azuki bean gourd."
+  contact:  "連絡"

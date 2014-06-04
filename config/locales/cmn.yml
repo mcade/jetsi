@@ -1,0 +1,37 @@
+cmn:
+  language:  "文"
+  jumbotron:
+    title:  "在国外旅行时获得最大的货币"
+    directions:  "从下面选择你的本国货币"
+    section1:  "相对于美元的汇率变动"
+    section2:  "相对于欧元的汇率变化"
+    section3:  "相对于英镑汇率的变化"
+    section4:  "相对于日元汇率变动"
+    section5:  "相对于中国人民币汇率变动"
+    table:
+      symbol:  "符号"
+      country:  "国家"
+      costofliving:  "生活费用"
+      bigmac:  "平均巨无霸价格"
+      month:  "月度变化"
+      year:  "年变化"
+      directions:  "如何使用这个图表"
+      info:  "湖的游客现场表演或咽喉组织的官方网站。"
+      search:  "搜索"
+  connect:
+    title:  "获取最新的旅游汇价新闻和提示"
+    subscribe:  "訂閱"
+  panels:
+    title1:  "你需要知道的"
+    body1:  "阿尼姆pariatur陈词滥调reprehenderit，enim eiusmod高寿命accusamus特里理查森广告鱿鱼。 3狼月亮officia奥特，非cupidatat滑板悲早午餐。食品运输车藜nesciunt laborum eiusmod。早午餐3狼月亮tempor，必须遵守aliqua把一只鸟就可以了鱿鱼单一产地的咖啡NULLA assumenda肖尔迪奇等。 Nihil阿尼姆keffiyeh黑体，精酿啤酒百事韦斯·安德森名气nesciunt sapiente EA proident。广告素食主义者excepteur屠夫副LOMO。护腿occaecat工艺啤酒从农场到餐桌，你可能还没有听说过他们accusamus百事可持续VHS原始牛仔的审美合成nesciunt。"
+    title2:  "获取最优惠房价"
+    body2:  "阿尼姆pariatur陈词滥调reprehenderit，enim eiusmod高寿命accusamus特里理查森广告鱿鱼。 3狼月亮officia奥特，非cupidatat滑板悲早午餐。食品运输车藜nesciunt laborum eiusmod。早午餐3狼月亮tempor，必须遵守aliqua把一只鸟就可以了鱿鱼单一产地的咖啡NULLA assumenda肖尔迪奇等。 Nihil阿尼姆keffiyeh黑体，精酿啤酒百事韦斯·安德森名气nesciunt sapiente EA proident。广告素食主义者excepteur屠夫副LOMO。护腿occaecat工艺啤酒从农场到餐桌，你可能还没有听说过他们accusamus百事可持续VHS原始牛仔的审美合成nesciunt。"
+    title3:  "获取最佳价值"
+    body3:  "阿尼姆pariatur陈词滥调reprehenderit，enim eiusmod高寿命accusamus特里理查森广告鱿鱼。 3狼月亮officia奥特，非cupidatat滑板悲早午餐。食品运输车藜nesciunt laborum eiusmod。早午餐3狼月亮tempor，必须遵守aliqua把一只鸟就可以了鱿鱼单一产地的咖啡NULLA assumenda肖尔迪奇等。 Nihil阿尼姆keffiyeh黑体，精酿啤酒百事韦斯·安德森名气nesciunt sapiente EA proident。广告素食主义者excepteur屠夫副LOMO。护腿occaecat工艺啤酒从农场到餐桌，你可能还没有听说过他们accusamus百事可持续VHS原始牛仔的审美合成nesciunt。"
+  ourchoice:
+    title:  "旅客选择"
+    illustrations:  "插图由"
+  about:
+    title:  "关于"
+    text:  "豌豆辣根鳄梨红豆莴笋秋葵。小豆蚕豆玉米秋葵萝卜大头菜tigernut juccama芥菜羽衣绿豆鳄梨celtuce quandong黑眼豌豆。葡萄银甜菜土豆豆瓣tigernut花生玉米。蓍草，香豌豆芫荽冬季马齿苋，繁缕秋葵辣椒布鲁塞尔萝卜大蒜红豆豌豆幼苗葫芦花生花生夏天马齿苋。"
+  contact:  "接点"

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140603053402) do
+ActiveRecord::Schema.define(version: 20140604062755) do
 
   create_table "currencies", force: true do |t|
     t.string   "name"
@@ -27,5 +27,16 @@ ActiveRecord::Schema.define(version: 20140603053402) do
     t.string   "currencyname"
     t.integer  "keyid"
   end
+
+  create_table "currency_translations", force: true do |t|
+    t.integer  "currency_id", null: false
+    t.string   "locale",      null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
+  end
+
+  add_index "currency_translations", ["currency_id"], name: "index_currency_translations_on_currency_id"
+  add_index "currency_translations", ["locale"], name: "index_currency_translations_on_locale"
 
 end

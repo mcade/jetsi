@@ -1,0 +1,37 @@
+fr:
+  language:  "Langue"
+  jumbotron:
+    title:  "Tirez le meilleur parti de votre devise lorsque vous voyagez à l'étranger"
+    directions:  "sélectionnez votre devise de la maison d'en bas"
+    section1:  "Les variations des taux de change par rapport au dollar américain"
+    section2:  "Les variations des taux de change par rapport à l'euro"
+    section3:  "Les variations des taux de change par rapport à la livre"
+    section4:  "Les variations des taux de change par rapport au yen japonais"
+    section5:  "Les variations des taux de change par rapport au yuan chinois"
+    table:
+      symbol:  "Symbole"
+      country:  "Pays"
+      costofliving:  "Coût de la vie"
+      bigmac:  "Prix ​​moyen du Big Mac"
+      month:  "Variation mensuelle"
+      year:  "Changement annuel"
+      directions:  "Comment utiliser ce tableau"
+      info:  "Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+      search:  "recherche"
+  connect:
+    title:  "Recevez les dernières nouvelles des taux de change touristiques et des conseils"
+    subscribe:  "Souscrire"
+  panels:
+    title1:  "Ce que vous devez savoir"
+    body1:  "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+    title2:  "Obtenir le meilleur taux"
+    body2:  "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+    title3:  "Obtenir la meilleure valeur"
+    body3:  "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+  ourchoice:
+    title:  "Prix ​​Travellers 'Choice"
+    illustrations:  "illustrations par"
+  about:
+    title:  "Sur"
+    text:  "Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut juccama green bean celtuce collard greens avocado quandong black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea azuki bean gourd."
+  contact:  "Contacter"

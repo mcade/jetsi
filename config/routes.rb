@@ -3,11 +3,10 @@ Jetsi::Application.routes.draw do
     collection { post :import }
   end
 
-  root  'static_pages#home'
-  match '/help',    to: 'static_pages#help',    via: 'get'
-  match '/about',   to: 'static_pages#about',   via: 'get'
-  match '/contact', to: 'static_pages#contact', via: 'get'
-  match '/currency', to: 'currencies#index', via: 'get'
+  root  'currencies#index'
+  match '/privacy',    to: 'static_pages#privacy',    via: 'get'
+  match '/terms',   to: 'static_pages#terms',   via: 'get'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

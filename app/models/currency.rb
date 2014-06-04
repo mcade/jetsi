@@ -1,6 +1,7 @@
 require 'csv'
 
 class Currency < ActiveRecord::Base
+  translates :name
 	
 	def self.import(file)
     	CSV.foreach(file.path, headers: true) do |row|

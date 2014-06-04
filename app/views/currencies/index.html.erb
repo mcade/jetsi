@@ -1,9 +1,9 @@
 <div class="center jumbotron" id="maindisplay">
   <h1>
-    Get the most out of your currency when traveling abroad
+    <%= t 'jumbotron.title' %>
   </h1>
 
-  <h3>(select your home currency from below)</h3>
+  <h3>(<%= t 'jumbotron.directions' %>)</h3>
   
 
   <div id="tabs" class="tabs">
@@ -18,28 +18,28 @@
     </nav>
     <div class="content">
       <section id="section-1">
-        <h2>Changes in exchange rates relative to the US Dollar</h2>
+        <h2><%= t 'jumbotron.section1' %></h2>
         <div id="currencies"><%= render 'currencies', :currencies => @USDcurrencies, :symbol => "$ " %></div>
       </section>
       <section id="section-2">
-        <h2>Changes in exchange rates relative to the Euro</h2>
+        <h2><%= t 'jumbotron.section2' %></h2>
         <div id="currencies"><%= render 'currencies', :currencies => @EURcurrencies, :symbol => "€ " %></div>
       </section>
       <section id="section-3">
-        <h2>Changes in exchange rates relative to the Pound</h2>
+        <h2><%= t 'jumbotron.section3' %></h2>
         <div id="currencies"><%= render 'currencies', :currencies => @GBPcurrencies, :symbol => "£ " %></div>
       </section>
       <section id="section-4">
-        <h2>Changes in exchange rates relative to the Japanese Yen</h2>
+        <h2><%= t 'jumbotron.section4' %></h2>
         <div id="currencies"><%= render 'currencies', :currencies => @JPYcurrencies, :symbol => "¥ " %></div>
       </section>
       <section id="section-5">
-        <h2>Changes in exchange rates relative to the Chinese Yuan</h2>
+        <h2><%= t 'jumbotron.section5' %></h2>
         <div id="currencies"><%= render 'currencies', :currencies => @CNYcurrencies, :symbol => "¥ " %></div>
       </section>
       <div id="buyingpower">
-        <button type="button" class="btn btn-info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-          How to use this chart&nbsp;
+        <button type="button" class="btn btn-info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<%= t 'jumbotron.table.info' %>">
+          <%= t 'jumbotron.table.directions' %>&nbsp;
           <i class="fa fa-question-circle fa-lg"></i>
         </button><script>$(function () { $("[data-toggle='popover']").popover(); });</script>
       </div>
@@ -53,7 +53,7 @@
       var $newdiv1 = $( "<div class='input-group'>"),
         $newspan1 = $( "<span class='input-group-addon glyphicon glyphicon-search'/>");
       $('div.dataTables_filter label').prepend( $newspan1 ).addClass("input-group");
-      $('div.dataTables_filter input').addClass("form-control").attr("placeholder", "search");
+      $('div.dataTables_filter input').addClass("form-control").attr("placeholder", "<%= t 'jumbotron.table.search' %>");
     });
   </script>
 
@@ -61,10 +61,10 @@
 </div>
 
 <div class="connect">
-  <span>Get the latest tourist exchange rate news and tips</span><br>
+  <span><%= t 'connect.title' %></span><br>
   <i class="fa fa-facebook-square fa-2x"></i>&nbsp;
   <i class="fa fa-twitter-square fa-2x"></i>&nbsp;
-  <%= link_to 'Subscribe <i class="fa fa-envelope"></i>'.html_safe, '#', class: "btn btn-large btn-primary subscribe" %>
+  <a href="#" class="btn btn-large btn-primary subscribe"><%= t 'connect.subscribe' %> <i class="fa fa-envelope"></i></a>
 </div>
 
 
@@ -73,13 +73,13 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;What You Need to Know<i class="fa fa-plus-square iconright"></i>
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;<%= t 'panels.title1' %><i class="fa fa-plus-square iconright"></i>
         </a>
       </h4>
     </div>
     <div id="collapseOne" class="panel-collapse collapse">
       <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <%= t 'panels.body1' %>
       </div>
     </div>
   </div>
@@ -87,13 +87,13 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;Getting the Best Rate<i class="fa fa-plus-square iconright"></i>
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;<%= t 'panels.title2' %><i class="fa fa-plus-square iconright"></i>
         </a>
       </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse">
       <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <%= t 'panels.body2' %>
       </div>
     </div>
   </div>
@@ -101,20 +101,20 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;Getting the Best Value<i class="fa fa-plus-square iconright"></i>
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;<%= t 'panels.title3' %><i class="fa fa-plus-square iconright"></i>
         </a>
       </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse">
       <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <%= t 'panels.body3' %>
       </div>
     </div>
   </div>
 </div>
 
 <div class="ourchoice center">
-  <h1>Travellers Choice<br><span class="glyphicon glyphicon-chevron-down"></span></h1>
+  <h1><%= t 'ourchoice.title' %><br><span class="glyphicon glyphicon-chevron-down"></span></h1>
 </div>
 <section class="grid-wrap">
   <ul class="grid swipe-right" id="grid">
@@ -131,16 +131,16 @@
     <li><a href="#"><img src="assets/bridge.PNG" alt="Golden Gate Bridge"><h3>Golden Gate Bridge of San Francisco</h3></a></li>
     <li><a href="#"><img src="assets/stonehenge.PNG" alt="Stonehenge"><h3>Stonehenge of Wiltshire, England</h3></a></li>
     <li><a href="http://www.shaundona.com/"><img src="assets/attrimg.png" alt="Shaun Dona">
-      <h3>Illustrations by<br>Shaun Dona</h3></a>
+      <h3><%= t 'ourchoice.illustrations' %><br>Shaun Dona</h3></a>
     </li>
   </ul>
   <div class="morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
-  <button type="button">About</button>
+  <button type="button"><%= t 'about.title' %></button>
   <div class="morph-content">
     <div>
       <div class="content-style-text">
         <h2>Foreign Savvy</h2>
-        <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut juccama green bean celtuce collard greens avocado quandong <strong>fennel gumbo</strong> black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea <strong>tomato spring onion</strong> azuki bean gourd.</p>
+        <p><%= t 'about.text' %></p>
         <span class="icon icon-close"></span>
       </div>
     </div>
