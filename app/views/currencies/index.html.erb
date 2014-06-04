@@ -18,23 +18,38 @@
     </nav>
     <div class="content">
       <section id="section-1">
-        <h2><%= t 'jumbotron.section1' %></h2>
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
         <div id="currencies"><%= render 'currencies', :currencies => @USDcurrencies, :symbol => "$ " %></div>
       </section>
       <section id="section-2">
-        <h2><%= t 'jumbotron.section2' %></h2>
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
         <div id="currencies"><%= render 'currencies', :currencies => @EURcurrencies, :symbol => "€ " %></div>
       </section>
       <section id="section-3">
-        <h2><%= t 'jumbotron.section3' %></h2>
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
         <div id="currencies"><%= render 'currencies', :currencies => @GBPcurrencies, :symbol => "£ " %></div>
       </section>
       <section id="section-4">
-        <h2><%= t 'jumbotron.section4' %></h2>
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
         <div id="currencies"><%= render 'currencies', :currencies => @JPYcurrencies, :symbol => "¥ " %></div>
       </section>
       <section id="section-5">
-        <h2><%= t 'jumbotron.section5' %></h2>
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
         <div id="currencies"><%= render 'currencies', :currencies => @CNYcurrencies, :symbol => "¥ " %></div>
       </section>
       <div id="buyingpower">

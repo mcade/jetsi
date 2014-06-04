@@ -231,7 +231,7 @@ footer {
 /* Content */
 .content section {
     font-size: 1.25em;
-    padding: 1em 1em 0;
+    padding: 0 1em 0;
     display: none;
     max-width: 1230px;
     margin: 0 auto;
@@ -1167,13 +1167,17 @@ table.has-columns-hidden > tbody > tr > td > span.responsiveExpander, table.has-
 .iconright {
   float: right;
   &.iconup {
-    color: rgba(0,128,0,0.7);
     margin-right: 5%;
   }
   &.icondown {
-    color: rgba(255,0,0,0.7);
     margin-right: 5%;
   }
+}
+.iconup {
+  color: rgba(0,128,0,0.7);
+}
+.icondown {
+  color: rgba(255,0,0,0.7);
 }
 @media screen and (max-width: 497px) {
   .row-detail .iconup, .row-detail .icondown {
@@ -1234,4 +1238,9 @@ div.dataTables_paginate {
   span {
     color: coral;
   }
+}
+
+.ratechanges {
+  float: right;
+  font-weight: 200;
 }
