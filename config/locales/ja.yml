@@ -14,22 +14,23 @@ ja:
       month:  "今月"
       year:  "今年"
       directions:  "このチャートを使用する方法"
-      info:  "Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+      info:  "あなたが外国に旅行するときには、現地通貨に通貨を変換します。強いご自宅の通貨が外貨良いお買い得品を基準にしています。海外での購買力を予測するには、為替レートの変化を見る必要があり、（ビッグマックのような）標準化された製品の平均コスト、および生活費。"
       search:  "検索"
   connect:
     title:  "最新の観光客の為替相場のニュースやヒントを得る"
     subscribe:  "購読する"
   panels:
     title1:  "あなたが知っておくべきこと"
-    body1:  "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+    body1_html:  "<li>通貨の需要がアップまたはダウンしたときに、観光の為替レートは変化します。これらの変動は、連続的であり、いくつかの理由のために起こる。</li><li>国内で増加した事業活動ができる高、金利や低インフレ率として、自国通貨を強化することができます。国のインフレ率は他のものよりもはるかに高い場合、金利上昇の影響は軽減される。</li><li>どこに旅行するときに考慮した国内の価格変動も考慮に入れるべきである。ものは、小さな田舎の町でよりも大きな都市部の都市で多くを要する。</li>"
     title2:  "ベストレートを取得する"
-    body2:  "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+    body2_html:  "<li>あなたの銀行に確認して、海外でカードを使用するための任意の取引手数料について、それらを求める。あなたは多くの場合、最良の料金を、この方法を取得しますが、必ずしもすべての場合は同じです。</li><li>あなたの銀行は海外でのカードでの購入や引き出しのための急な手数料を充電した場合、あなたは旅行マネーサービスの使用を検討することをお勧めします。</li><li>一般的には、空港、駅やホテルでの両替カウンター - 便利なもののは - 最悪の観光客の為替レートを提供します。しかし、これらの旅行のハブの外のベンダーは別の良いオプションです。</li>"
     title3:  "最高の価値を取得する"
-    body3:  "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+    body3_html:  "<li>%{bpi} 毎年世界中から124の都市をカタログし、最も高価への格安航空からそれらをランク付けします。</li><li>%{bmi} エコノミストが発行し、年間メトリックは、通貨との間の購買力伝達するために使用されている。</li><li>当社は、当社からの為替相場のデータを取得 %{oan}、世界的に権威や通貨データのための信頼できるソース。</li>"
+    title4:  "為替レートカンニングペーパー"
   ourchoice:
     title:  "旅行者の選択"
     illustrations:  "イラストによる"
   about:
     title:  "約"
-    text:  "Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut juccama green bean celtuce collard greens avocado quandong black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea azuki bean gourd."
+    text_html:  "<br><br>私たちは、新しい文化を探求する人々を奨励しています。<br><br>それは小さな世界だと我々はそれのすべてを見学する予定。<br><br>私たちの旅にご参加ください。"
   contact:  "連絡"

@@ -14,22 +14,23 @@ es:
       month:  "Este mes"
       year:  "Este año"
       directions:  "Cómo utilizar esta tabla"
-      info:  "Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+      info:  "Cuando usted viaja a un país extranjero a convertir su moneda a la moneda local. Cuanto más fuerte es la divisa principal es relativa a la moneda extranjera, mejor trato. Para pronosticar su poder de compra en el extranjero que hay que buscar en el cambio en el tipo de cambio, el costo promedio de un producto estandarizado (como el Big Mac), y el costo de vida."
       search:  "búsqueda"
   connect:
     title:  "Recibe las últimas noticias y consejos de tipo de cambio turístico"
     subscribe:  "Suscribir"
   panels:
     title1:  "Lo que usted necesita saber"
-    body1:  "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+    body1_html:  "<li>Los tipos de cambio de Turismo cambian cuando la demanda de una moneda sube o baja. Estas fluctuaciones son continuas y pasan por una serie de razones.</li><li>El aumento de la actividad empresarial en un país puede fortalecer su moneda, como las altas tasas de interés puede o bajas tasas de inflación. El impacto de las tasas de interés más altas se mitiga si la inflación en el país es mucho mayor que en otros.</li><li>Las variaciones de precio dentro de un país también deben tenerse en cuenta al considerar dónde viajar. Cosas cuesta más en las grandes ciudades urbanas que lo hace en pequeños pueblos rurales.</li>"
     title2:  "Conseguir el mejor tarifa"
-    body2:  "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+    body2_html:  "<li>Consulte con su banco y preguntar acerca de los honorarios de transacción por usar su tarjeta en el extranjero. A menudo se dan las mejores tarifas de esta manera pero no todos los casos es la misma.</li><li>Si su banco cobra honorarios escarpados para compras y retiros efectuados con su tarjeta de extranjero, entonces es posible que desee considerar el uso de un servicio de dinero para el viaje.</li><li>En general, las oficinas de cambio de moneda en aeropuertos, estaciones y hoteles - aunque conveniente - ofrecen las peores tasas de cambio turísticos. Sin embargo, los proveedores externos de estos hubs de viaje son otra buena opción.</li>"
     title3:  "Obtener la mejor oferta"
-    body3:  "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+    body3_html:  "<li>%{bpi} anualmente cataloga 124 ciudades de todo el mundo y los ordena desde el más barato al más caro.</li><li>%{bmi} es una métrica anual publicado por The Economist utiliza para transmitir el poder adquisitivo entre las monedas.</li><li>Obtenemos nuestros datos de tipo de cambio de %{oan}, una autoridad a nivel mundial y fuente de confianza para los datos de moneda.</li>"
+    title4:  "Tipo de Cambio Cheat Sheet"
   ourchoice:
     title:  "nuevo y bastante céntrico"
     illustrations:  "Ilustraciones de"
   about:
     title:  "Acerca de"
-    text:  "Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut juccama green bean celtuce collard greens avocado quandong black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea azuki bean gourd."
+    text_html:  "<br><br>Animamos a la gente a explorar nuevas culturas.<br><br>Es un mundo pequeño y tenemos la intención de recorrer todo.<br><br>Únete a nosotros en nuestro viaje."
   contact:  "Contacto"

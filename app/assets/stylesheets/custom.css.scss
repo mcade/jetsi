@@ -922,7 +922,7 @@ footer {
 /* Style for text modal */
 .content-style-text {
   padding: 60px;
-  text-align: left;
+  text-align: center;
 }
 
 .content-style-text h2 {
@@ -1092,9 +1092,13 @@ table.dataTable.order-column tbody tr > .sorting_3 {
 
 /* accordion */
 #accordion .panel, #accordion .panel .panel-heading {
-  background-color: rgba(245, 245, 245, 0.85);
+  background-color: rgba(245, 245, 245, 0.95);
   h4 {
     font-weight: 400;
+  }
+  .panel-body {
+    font-size: 1.1em;
+    font-weight: 300;
   }
 }
 

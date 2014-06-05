@@ -92,9 +92,9 @@
         </a>
       </h4>
     </div>
-    <div id="collapseOne" class="panel-collapse collapse">
+    <div id="collapseOne" class="panel-collapse collapse in">
       <div class="panel-body">
-        <%= t 'panels.body1' %>
+        <ul><%= t 'panels.body1_html' %></ul>
       </div>
     </div>
   </div>
@@ -108,7 +108,7 @@
     </div>
     <div id="collapseTwo" class="panel-collapse collapse">
       <div class="panel-body">
-        <%= t 'panels.body2' %>
+        <ul><%= t 'panels.body2_html' %></ul>
       </div>
     </div>
   </div>
@@ -122,8 +122,17 @@
     </div>
     <div id="collapseThree" class="panel-collapse collapse">
       <div class="panel-body">
-        <%= t 'panels.body3' %>
+        <ul><%= t 'panels.body3_html', :bpi => link_to("The Backpacker Index", "http://www.priceoftravel.com/2222/world-cities-by-price-backpacker-index/"), :bmi => link_to("The Big Mac Index", "http://www.economist.com/content/big-mac-index"), :oan => link_to("Oanda", "http://www.oanda.com/currency/converter/") %></ul>
       </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="http://www.oanda.com/currency/travel-exchange-rates">
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;<a href="http://www.oanda.com/currency/travel-exchange-rates" target="_blank"><%= t 'panels.title4' %></a><i class="fa fa-external-link iconright"></i>
+        </a>
+      </h4>
     </div>
   </div>
 </div>
@@ -155,8 +164,9 @@
     <div>
       <div class="content-style-text">
         <h2>Foreign Savvy</h2>
-        <p><%= t 'about.text' %></p>
-        <span class="icon icon-close"></span>
+        <p><%= t 'about.text_html' %></p>
+        <span class="icon icon-close"></span><br>
+        <a href="http://www.w3schools.com"><%= t 'connect.subscribe' %></a>
       </div>
     </div>
   </div>
