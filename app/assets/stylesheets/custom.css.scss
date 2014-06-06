@@ -350,7 +350,7 @@ footer {
 }
 
 .js .grid {
-  background: url(<%= asset_path "loading.gif" %>) no-repeat 50% 100px;
+  background: asset_url("loading.gif") no-repeat 50% 100px;
 }
 
 .js .grid.loaded {
