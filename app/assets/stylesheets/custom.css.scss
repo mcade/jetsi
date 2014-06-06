@@ -984,7 +984,7 @@ footer {
   }
   .connect {
     font-size: 1.5em !important;
-    a {
+    a:last-child {
       font-size: 1.1em !important;
     }
     .fa-facebook-square {
@@ -1136,7 +1136,7 @@ table.dataTable.order-column tbody tr > .sorting_3 {
   .fa-twitter-square {
     color: #55ACEE;
   }
-  a {
+  a:last-child {
     font-size: .8em;
   }
 }
@@ -1247,4 +1247,13 @@ div.dataTables_paginate {
 .ratechanges {
   float: right;
   font-weight: 200;
+}
+
+.terms {
+  background-color: white;
+  padding: 1em;
+}
+
+.linkicon {
+  float: right;
 }

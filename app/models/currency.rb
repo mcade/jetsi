@@ -17,13 +17,13 @@ class Currency < ActiveRecord::Base
           		:weeklychange => row[6],
           		:monthlychange => row[7],
           		:yearlychange => row[8],
-          		:currencyfor => row[9]
+          		:currencyfor => row[9],
+              :wikilink => row[10]
         		)
       		else
         		currency.update_attributes(
-          		:weeklychange => row[2],
-          		:monthlychange => row[3],
-          		:yearlychange => row[4]
+          		:monthlychange => row[7],
+          		:yearlychange => row[8]
         		)
      		end
      	end

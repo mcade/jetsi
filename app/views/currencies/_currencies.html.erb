@@ -13,7 +13,7 @@
   <tbody>
     <% currencies.each do |currency| %>
       <tr>
-          <td><%= currency.currencyname %></td>
+          <td><%= currency.currencyname %><a href="<%= currency.wikilink %>" target="_blank"><i class="fa fa-info-circle linkicon"></i></a></td>
           <td><%= currency.name %></td>
           <td><a href="<%= currency.livingcost %>" target="_blank"><i class="fa fa-external-link fa-lg"></i></a></td>
           <td><%= number_to_currency(currency.bmi, unit: symbol) %></td>
@@ -21,10 +21,10 @@
             <% unless currency.monthlychange < 0 %>
               +
             <% end %>
-            <%= number_to_percentage(currency.monthlychange, precision: 2) %>
+            <%= number_to_percentage(currency.monthlychange * 100, precision: 2) %>
             <% if currency.monthlychange > 0 %>
               <span class="glyphicon glyphicon-arrow-up iconright iconup"></span>
-            <% else %>
+            <% elsif currency.monthlychange < 0 %>
               <span class="glyphicon glyphicon-arrow-down iconright icondown"></span>
             <% end %>
           </td>
@@ -32,10 +32,10 @@
             <% unless currency.yearlychange < 0 %>
               +
             <% end %>
-            <%= number_to_percentage(currency.yearlychange, precision: 2) %> 
+            <%= number_to_percentage(currency.yearlychange * 100, precision: 2) %> 
             <% if currency.yearlychange > 0 %>
               <span class="glyphicon glyphicon-arrow-up iconright iconup"></span>
-            <% else %>
+            <% elsif currency.yearlychange < 0 %>
               <span class="glyphicon glyphicon-arrow-down iconright icondown"></span>
             <% end %>
           </td>

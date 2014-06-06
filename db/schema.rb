@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140604062755) do
+ActiveRecord::Schema.define(version: 20140606093656) do
 
   create_table "currencies", force: true do |t|
     t.string   "name"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20140604062755) do
     t.string   "livingcost"
     t.string   "currencyname"
     t.integer  "keyid"
+    t.string   "wikilink"
   end
 
   create_table "currency_translations", force: true do |t|
