@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>keyid:</strong>
+  <%= @currency.keyid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @currency.name %>
+</p>
+
+<p>
+  <strong>Currency Name:</strong>
+  <%= @currency.currencyname %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @currency.region %>
+</p>
+
+<p>
+  <strong>Cost of Living:</strong>
+  <%= @currency.livingcost %>
+</p>
+
+<p>
+  <strong>BMI:</strong>
+  <%= @currency.bmi %>
+</p>
+
+<p>
+  <strong>Currencyfor:</strong>
+  <%= @currency.currencyfor %>
+</p>
+
+<p>
+  <strong>Weeklychange:</strong>
+  <%= @currency.weeklychange %>
+</p>
+
+<p>
+  <strong>Monthlychange:</strong>
+  <%= @currency.monthlychange %>
+</p>
+
+<p>
+  <strong>Yearlychange:</strong>
+  <%= @currency.yearlychange %>
+</p>
+
+<p>
+  <strong>Wikilink:</strong>
+  <%= @currency.wikilink %>
+</p>
+
+<%= link_to 'Edit', edit_currency_path(@currency) %> |
+<%= link_to 'Destroy', @currency, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', currencies_path %>

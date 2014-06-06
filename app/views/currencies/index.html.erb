@@ -1,0 +1,238 @@
+<div class="center jumbotron" id="maindisplay">
+  <h1>
+    <%= t 'jumbotron.title' %>
+  </h1>
+
+  <h3>(<%= t 'jumbotron.directions' %>)</h3>
+  
+
+  <div id="tabs" class="tabs">
+    <nav>
+      <ul>
+        <li><a href="#section-1" class="icon-shop" type="submit" name="index" value="USD"><span>USD</span></a></li>
+        <li><a href="#section-2" class="icon-cup" type="submit" name="index" value="EUR"><span>EUR</span></a></li>
+        <li><a href="#section-3" class="icon-food" type="submit" name="index" value="GBP"><span>GBP</span></a></li>
+        <li><a href="#section-4" class="icon-lab" type="submit" name="index" value="JPY"><span>JPY</span></a></li>
+        <li><a href="#section-5" class="icon-truck" type="submit" name="index" value="CNY"><span>CNY</span></a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <section id="section-1">
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
+        <div id="currencies"><%= render 'currencies', :currencies => @USDcurrencies, :symbol => "$ " %></div>
+      </section>
+      <section id="section-2">
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
+        <div id="currencies"><%= render 'currencies', :currencies => @EURcurrencies, :symbol => "€ " %></div>
+      </section>
+      <section id="section-3">
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
+        <div id="currencies"><%= render 'currencies', :currencies => @GBPcurrencies, :symbol => "£ " %></div>
+      </section>
+      <section id="section-4">
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
+        <div id="currencies"><%= render 'currencies', :currencies => @JPYcurrencies, :symbol => "¥ " %></div>
+      </section>
+      <section id="section-5">
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
+        <div id="currencies"><%= render 'currencies', :currencies => @CNYcurrencies, :symbol => "¥ " %></div>
+      </section>
+      <div id="buyingpower">
+        <button type="button" class="btn btn-info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<%= t 'jumbotron.table.info' %>">
+          <%= t 'jumbotron.table.directions' %>&nbsp;
+          <i class="fa fa-question-circle fa-lg"></i>
+        </button><script>$(function () { $("[data-toggle='popover']").popover(); });</script>
+      </div>
+    </div><!-- /content -->
+  </div><!-- /tabs -->
+  <script>
+      new CBPFWTabs( document.getElementById( 'tabs' ) );
+  </script>
+  <script>
+    $( document ).ready(function() {
+      var $newdiv1 = $( "<div class='input-group'>"),
+        $newspan1 = $( "<span class='input-group-addon glyphicon glyphicon-search'/>");
+      $('div.dataTables_filter label').prepend( $newspan1 ).addClass("input-group");
+      $('div.dataTables_filter input').addClass("form-control").attr("placeholder", "<%= t 'jumbotron.table.search' %>");
+    });
+  </script>
+
+  <br>
+</div>
+
+<div class="connect">
+  <span><%= t 'connect.title' %></span><br>
+  <a href="https://www.facebook.com/ForeignSavvy" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>&nbsp;
+  <a href="https://twitter.com/ForeignSavvy" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>&nbsp;
+  <a href="http://eepurl.com/WltST" class="btn btn-large btn-primary subscribe"><%= t 'connect.subscribe' %> <i class="fa fa-envelope"></i></a>
+</div>
+
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;<%= t 'panels.title1' %><i class="fa fa-plus-square iconright"></i>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <ul><%= t 'panels.body1_html' %></ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;<%= t 'panels.title2' %><i class="fa fa-plus-square iconright"></i>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul><%= t 'panels.body2_html' %></ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;<%= t 'panels.title3' %><i class="fa fa-plus-square iconright"></i>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul><%= t 'panels.body3_html', :bpi => link_to("The Backpacker Index", "http://www.priceoftravel.com/2222/world-cities-by-price-backpacker-index/"), :bmi => link_to("The Big Mac Index", "http://www.economist.com/content/big-mac-index"), :oan => link_to("Oanda", "http://www.oanda.com/currency/converter/") %></ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="http://www.oanda.com/currency/travel-exchange-rates">
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;<a href="http://www.oanda.com/currency/travel-exchange-rates" target="_blank"><%= t 'panels.title4' %></a><i class="fa fa-external-link iconright"></i>
+        </a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+<div class="ourchoice center">
+  <h1><%= t 'ourchoice.title' %><br><span class="glyphicon glyphicon-chevron-down"></span></h1>
+</div>
+<section class="grid-wrap">
+  <ul class="grid swipe-right" id="grid">
+    <li><a href="http://www.tripadvisor.com/Tourism-g294200-Egypt-Vacations.html"><%= image_tag("pyramids2.png", alt: "Egyptian pyramids") %><h3>Egyptian pyramids (EGP E£)</h3></a></li>
+    <li><a href="http://www.tripadvisor.com/Tourism-g187147-Paris_Ile_de_France-Vacations.html"><%= image_tag("eiffeltower.PNG", alt: "Eiffel Tower") %><h3>Eiffel Tower of Paris (EUR €)</h3></a></li>
+    <li><a href="http://www.tripadvisor.com/Tourism-g187791-Rome_Lazio-Vacations.html"><%= image_tag("colosseum.png", alt: "Colosseum of Rome") %><h3>Colosseum of Rome (EUR €)</h3></a></li>
+    <li><a href="http://www.tripadvisor.com/Tourism-g186338-London_England-Vacations.html"><%= image_tag("bigben.png", alt: "Big Ben") %><h3>London’s Big Ben (GBP £)</h3></a></li>
+    <li><a href="http://www.tripadvisor.com/Tourism-g255060-Sydney_New_South_Wales-Vacations.html"><%= image_tag("operahouse.png", alt: "Sydney Opera House") %><h3>Sydney Opera House (AUD A$)</h3></a></li>
+    <li><a href="http://www.tripadvisor.com/Tourism-g294280-Brazil-Vacations.html"><%= image_tag("redentor.png", alt: "Cristo Redentor") %><h3>Rio de Janeiro’s Cristo Redentor (BRL R$)</h3></a></li>
+    <li><a href="http://www.tripadvisor.com/Tourism-g316040-Easter_Island-Vacations.html"><%= image_tag("moais.png", alt: "Moais") %><h3>Moais of the Easter Islands (CLP $)</h3></a></li>
+    <li><a href="http://www.tripadvisor.com/Tourism-g297683-Agra_Uttar_Pradesh-Vacations.html"><%= image_tag("tajmahal.PNG", alt: "Taj Mahal of Agra") %><h3>Taj Mahal of Agra (INR)</h3></a></li>
+    <li><a href="http://www.tripadvisor.com/Tourism-g188553-The_Netherlands-Vacations.html"><%= image_tag("windmill.PNG", alt: "Dutch windmill") %><h3>The Netherlands (EUR €)</h3></a></li>
+    <li><a href="http://www.tripadvisor.com/Tourism-g150768-Mexico-Vacations.html"><%= image_tag("temple.PNG", alt: "Chichén Itzá") %><h3>Chichén Itzá in Mexico<br>(MXN Mex$)</h3></a></li>
+    <li><a href="http://www.tripadvisor.com/Tourism-g60713-San_Francisco_California-Vacations.html"><%= image_tag("bridge.PNG", alt: "Golden Gate Bridge") %><h3>Golden Gate Bridge of San Francisco (USD $)</h3></a></li>
+    <li><a href="http://www.tripadvisor.com/Tourism-g186217-England-Vacations.html"><%= image_tag("stonehenge.PNG", alt: "Stonehenge") %><h3>Stonehenge of Wiltshire, England (GBP £)</h3></a></li>
+    <li><a href="http://www.shaundona.com/"><%= image_tag("attrimg.png", alt: "Shaun Dona") %>
+      <h3><%= t 'ourchoice.illustrations' %><br>Shaun Dona</h3></a>
+    </li>
+  </ul>
+  <div class="morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
+  <button type="button"><%= t 'about.title' %></button>
+  <div class="morph-content">
+    <div>
+      <div class="content-style-text">
+        <h2>Foreign Savvy</h2>
+        <p><%= t 'about.text_html' %></p>
+        <span class="icon icon-close"></span><br>
+        <a href="http://eepurl.com/WltST"><%= t 'connect.subscribe' %></a>
+      </div>
+    </div>
+  </div>
+</div><!-- morph-button -->
+</section>
+<script>
+  new GridScrollFx( document.getElementById( 'grid' ), {
+    viewportFactor : 0.4
+  } );
+</script>
+
+<script>
+  (function() { 
+    var docElem = window.document.documentElement, didScroll, scrollPosition;
+
+    // trick to prevent scrolling when opening/closing button
+    function noScrollFn() {
+      window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+    }
+
+    function noScroll() {
+      window.removeEventListener( 'scroll', scrollHandler );
+      window.addEventListener( 'scroll', noScrollFn );
+    }
+
+    function scrollFn() {
+      window.addEventListener( 'scroll', scrollHandler );
+    }
+
+    function canScroll() {
+      window.removeEventListener( 'scroll', noScrollFn );
+      scrollFn();
+    }
+
+    function scrollHandler() {
+      if( !didScroll ) {
+        didScroll = true;
+        setTimeout( function() { scrollPage(); }, 60 );
+      }
+    };
+
+    function scrollPage() {
+      scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+      didScroll = false;
+    };
+
+    scrollFn();
+
+    var UIBtnn = new UIMorphingButton( document.querySelector( '.morph-button' ), {
+      closeEl : '.icon-close',
+      onBeforeOpen : function() {
+        // don't allow to scroll
+        noScroll();
+      },
+      onAfterOpen : function() {
+        // can scroll again
+        canScroll();
+      },
+      onBeforeClose : function() {
+        // don't allow to scroll
+        noScroll();
+      },
+      onAfterClose : function() {
+        // can scroll again
+        canScroll();
+      }
+    } );
+  })();
+</script>

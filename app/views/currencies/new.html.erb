@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+<h1>New currency</h1>
+
+<%= render 'form' %>
+<br>
+-- import csv --
+
+<%= form_tag import_currencies_path, multipart: true do %>
+    <p>1.<br><%= file_field_tag :file %></p>
+    <br>
+    <p>2.<%= submit_tag "Import" %></p>
+<% end %>
+
+<%= link_to 'Back', currencies_path %>

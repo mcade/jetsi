@@ -1,0 +1,36 @@
+fr:
+  language:  "Langue"
+  jumbotron:
+    title:  "Tirez le meilleur parti de votre devise lorsque vous voyagez à l'étranger"
+    directions:  "sélectionnez votre devise de la maison d'en bas"
+    section1:  "la variation du taux de change"
+    favorable:  "favorable"
+    unfavorable:  "défavorable"
+    table:
+      symbol:  "Symbole"
+      country:  "Pays"
+      costofliving:  "Coût de la vie"
+      bigmac:  "Prix ​​moyen du Big Mac"
+      month:  "Ce mois-ci"
+      year:  "Cette année"
+      directions:  "Comment utiliser ce tableau"
+      info:  "Lorsque vous voyagez dans un pays étranger, vous convertissez votre monnaie à la monnaie locale. Le plus fort de votre devise de la maison est par rapport à la monnaie étrangère, meilleure est l'affaire. Pour prévoir votre pouvoir d'achat à l'étranger, vous devez regarder à la variation du taux de change, le coût moyen d'un produit standardisé (comme le Big Mac), et le coût de la vie."
+      search:  "recherche"
+  connect:
+    title:  "Recevez les dernières nouvelles des taux de change touristiques et des conseils"
+    subscribe:  "Souscrire"
+  panels:
+    title1:  "Ce que vous devez savoir"
+    body1_html:  "<li>Taux de change de tourisme changent lorsque la demande pour une monnaie monte ou descend. Ces variations sont continues et se produisent pour diverses raisons.</li><li>L'accroissement des activités dans un pays peut renforcer sa monnaie, tout comme les taux d'intérêt élevés ou faibles taux d'inflation. L'impact des taux d'intérêt plus élevés est atténué si l'inflation dans le pays est beaucoup plus élevé que dans d'autres.</li><li>Les variations de prix d'un pays devraient également être prises en compte lors de l'examen où voyager. Stuff coûte plus dans les grandes villes urbaines que c'est le cas dans les petites villes rurales.</li>"
+    title2:  "Obtenir le meilleur taux"
+    body2_html:  "<li>Vérifiez auprès de votre banque et leur poser des questions sur les frais de transaction pour l'utilisation de votre carte à l'étranger. Vous aurez souvent à obtenir les meilleurs taux de cette façon, mais pas tous les cas est le même.</li><li>Si votre banque exige des frais raides pour les achats et retraits effectués avec votre carte à l'étranger, alors vous voudrez peut-être envisager d'utiliser un service d'argent de Voyage.</li><li>En général, un bureau de change compteurs dans les aéroports, les gares et les hôtels - bien pratique - offrent les pires touristes taux de change. Toutefois, les fournisseurs extérieurs de ces pôles de voyage sont une autre bonne option.</li>"
+    title3:  "Obtenir la meilleure valeur"
+    body3_html:  "<li>%{bpi} catalogues chaque année 124 villes à travers le monde et les classe de la moins chère à la plus chère.</li><li>%{bmi} est une métrique annuel publié par The Economist utilisé pour transmettre le pouvoir d'achat entre les monnaies.</li><li>Nous obtenons nos données sur le taux de change de %{oan}, une autorité dans le monde entier et source de confiance pour les données monétaires.</li>"
+    title4:  "Taux de change Cheat Sheet"
+  ourchoice:
+    title:  "Prix ​​Travellers 'Choice"
+    illustrations:  "illustrations par"
+  about:
+    title:  "Sur"
+    text_html:  "<br><br>Nous encourageons les gens à explorer de nouvelles cultures.<br><br>C'est un petit monde et nous avons l'intention de visiter tout cela.<br><br>Rejoignez-nous sur notre voyage."
+  contact:  "Contacter"

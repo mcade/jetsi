@@ -1,0 +1,36 @@
+de:
+  language:  "Sprache"
+  jumbotron:
+    title:  "Holen Sie das Beste aus Ihrer Währung bei Reisen ins Ausland"
+    directions:  "wählen Sie Ihre Heimatwährung von unten"
+    section1:  "Wechselkursänderung"
+    favorable:  "günstig"
+    unfavorable:  "ungünstig"
+    table:
+      symbol:  "Symbol"
+      country:  "Land"
+      costofliving:  "Lebensunterhalt"
+      bigmac:  "Durchschnittliche Big Mac Preis"
+      month:  "Dieser Monat"
+      year:  "Dieses Jahr"
+      directions:  "Wie diese Grafik zu verwenden"
+      info:  "Wenn Sie in ein fremdes Land reisen Sie Ihre Währung konvertieren, um der lokalen Währung. Je stärker Ihre Heimatwährung ist relativ zur Fremdwährungs desto besser die Schnäppchen. Um Ihre Kaufkraft im Ausland Prognose müssen Sie bei der Änderung des Wechselkurses aus, die Durchschnittskosten eines standardisierten Produkt (wie der Big Mac), und die Lebenshaltungskosten."
+      search:  "Suche"
+  connect:
+    title:  "Holen Sie sich die neueste Touristenwechselkurs News und Tipps"
+    subscribe:  "Zeichnen"
+  panels:
+    title1:  "Was Sie wissen müssen"
+    body1_html:  "<li>Tourist Wechselkurse ändern, wenn die Nachfrage nach einer Währung steigt oder fällt. Diese Schwankungen sind kontinuierlich und geschieht für eine Reihe von Gründen.</li><li>Erhöhte Geschäftstätigkeit in einem Land seine Währung zu stärken, wie hohe Zinsen oder niedrige Inflationsraten. Die Auswirkungen der höheren Zinsen wird gemildert, wenn die Inflation im Land ist sehr viel höher als in anderen.</li><li>Preisschwankungen innerhalb eines Landes sollte auch, wenn man wo zu reisen berücksichtigt werden. Stuff mehr kostet in großen städtischen Städten als in ländlichen Kleinstädten tut.</li>"
+    title2:  "Das Beste bewerten"
+    body2_html:  "<li>Erkundigen Sie sich bei Ihrer Bank und fragen Sie sie, über alle Transaktionsgebühren für die Verwendung Ihrer Karte im Ausland. Sie werden oft die besten Preise auf diese Weise aber nicht jeder Fall ist gleich.</li><li>Wenn Ihre Bank lädt steilen Gebühren für Käufe und Rücknahmen mit Ihrer Karte im Ausland gemacht, dann möchten Sie vielleicht zu prüfen, mit einem Reisegeld Service.</li><li>In der Regel, Wechselschalter an den Flughäfen, Bahnhöfen und Hotels - obwohl praktisch - bieten die schlimmsten Touristenwechselkurse . Allerdings Anbieter außerhalb dieser Reise Hubs sind eine weitere gute Option.</li>"
+    title3:  "Immer den besten Wert"
+    body3_html:  "<li>%{bpi} kataloge jährlich 124 Städte aus der ganzen Welt und ordnet sie von den billigsten bis zum teuersten.</li><li>%{bmi} wird eine jährliche Metrik von The Economist veröffentlichten verwendet werden, um die Kaufkraft zu vermitteln zwischen den Währungen.</li><li>Wir bekommen unsere Daten von Wechselkurs %{oan}, eine weltweite Autorität und vertrauenswürdige Quelle für Währungsdaten.</li>"
+    title4:  "Wechselkurs-Spickzettel"
+  ourchoice:
+    title:  "Reisende, die Wahl"
+    illustrations:  "Illustrationen von"
+  about:
+    title:  "über"
+    text_html:  "<br><br>Wir ermutigen die Menschen, neue Kulturen zu erforschen.<br><br>Es ist eine kleine Welt, und wir beabsichtigen, alles zu erkunden.<br><br>Begleiten Sie uns auf unserer Reise."
+  contact:  "Kontakt"
