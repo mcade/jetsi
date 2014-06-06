@@ -2,51 +2,51 @@
 
 @font-face{
     font-family: 'Fira Sans';
-    src: font-url('/assets/FiraSans-Hair.eot');
+    src: font-url('FiraSans-Hair.eot');
     src: local('Fira Sans Hair'),
-         font-url('/assets/FiraSans-Hair.eot') format('embedded-opentype'),
-         font-url('/assets/FiraSans-Hair.woff') format('woff'),
-         font-url('/assets/FiraSans-Hair.ttf') format('truetype');
+         font-url('FiraSans-Hair.eot') format('embedded-opentype'),
+         font-url('FiraSans-Hair.woff') format('woff'),
+         font-url('FiraSans-Hair.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 @font-face{
     font-family: 'Fira Sans';
-    src: font-url('/assets/FiraSans-UltraLight.eot');
+    src: font-url('FiraSans-UltraLight.eot');
     src: local('Fira Sans UltraLight'),
-         font-url('/assets/FiraSans-UltraLight.eot') format('embedded-opentype'),
-         font-url('/assets/FiraSans-UltraLight.woff') format('woff'),
-         font-url('/assets/FiraSans-UltraLight.ttf') format('truetype');
+         font-url('FiraSans-UltraLight.eot') format('embedded-opentype'),
+         font-url('FiraSans-UltraLight.woff') format('woff'),
+         font-url('FiraSans-UltraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 @font-face{
     font-family: 'Fira Sans';
-    src: font-url('/assets/FiraSans-Light.eot');
+    src: font-url('FiraSans-Light.eot');
     src: local('Fira Sans Light'),
-         font-url('/assets/FiraSans-Light.eot') format('embedded-opentype'),
-         font-url('/assets/FiraSans-Light.woff') format('woff'),
-         font-url('/assets/FiraSans-Light.ttf') format('truetype');
+         font-url('FiraSans-Light.eot') format('embedded-opentype'),
+         font-url('FiraSans-Light.woff') format('woff'),
+         font-url('FiraSans-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 @font-face{
     font-family: 'Fira Sans';
-    src: font-url('/assets/FiraSans-Regular.eot');
+    src: font-url('FiraSans-Regular.eot');
     src: local('Fira Sans Regular'),
-         font-url('/assets/FiraSans-Regular.eot') format('embedded-opentype'),
-         font-url('/assets/FiraSans-Regular.woff') format('woff'),
-         font-url('/assets/FiraSans-Regular.ttf') format('truetype');
+         font-url('FiraSans-Regular.eot') format('embedded-opentype'),
+         font-url('FiraSans-Regular.woff') format('woff'),
+         font-url('FiraSans-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 @font-face{
     font-family: 'Fira Sans';
-    src: font-url('/assets/FiraSans-Bold.eot');
+    src: font-url('FiraSans-Bold.eot');
     src: local('Fira Sans Bold'),
-         font-url('/assets/FiraSans-Bold.eot') format('embedded-opentype'),
-         font-url('/assets/FiraSans-Bold.woff') format('woff'),
-         font-url('/assets/FiraSans-Bold.ttf') format('truetype');
+         font-url('FiraSans-Bold.eot') format('embedded-opentype'),
+         font-url('FiraSans-Bold.woff') format('woff'),
+         font-url('FiraSans-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -350,7 +350,7 @@ footer {
 }
 
 .js .grid {
-  background: url(loading.gif) no-repeat 50% 100px;
+  background: url(<%= asset_path "loading.gif" %>) no-repeat 50% 100px;
 }
 
 .js .grid.loaded {
