@@ -1,0 +1,241 @@
+<div class="center jumbotron" id="maindisplay">
+  <h1>
+    <%= t 'jumbotron.title' %>
+  </h1>
+
+  <h3>(<%= t 'jumbotron.directions' %>)</h3>
+  
+
+  <div id="tabs" class="tabs">
+    <nav>
+      <ul>
+        <li><a href="#section-1" class="icon-shop" type="submit" name="index" value="USD"><span>USD</span></a></li>
+        <li><a href="#section-2" class="icon-cup" type="submit" name="index" value="EUR"><span>EUR</span></a></li>
+        <li><a href="#section-3" class="icon-food" type="submit" name="index" value="GBP"><span>GBP</span></a></li>
+        <li><a href="#section-4" class="icon-lab" type="submit" name="index" value="JPY"><span>JPY</span></a></li>
+        <li><a href="#section-5" class="icon-truck" type="submit" name="index" value="CNY"><span>CNY</span></a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <section id="section-1">
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
+        <div id="currencies"><%= render 'bizcurrencies', :currencies => @USDcurrencies, :symbol => "$ " %></div>
+      </section>
+      <section id="section-2">
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
+        <div id="currencies"><%= render 'bizcurrencies', :currencies => @EURcurrencies, :symbol => "€ " %></div>
+      </section>
+      <section id="section-3">
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
+        <div id="currencies"><%= render 'bizcurrencies', :currencies => @GBPcurrencies, :symbol => "£ " %></div>
+      </section>
+      <section id="section-4">
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
+        <div id="currencies"><%= render 'bizcurrencies', :currencies => @JPYcurrencies, :symbol => "¥ " %></div>
+      </section>
+      <section id="section-5">
+        <span class="ratechanges">
+          *<%= t 'jumbotron.section1' %> <i class="fa fa-exchange"></i><br>
+          (<span class="glyphicon glyphicon-arrow-up iconup"></span><%= t 'jumbotron.favorable' %>, <span class="glyphicon glyphicon-arrow-down icondown"></span><%= t 'jumbotron.unfavorable' %>)
+        </span>
+        <div id="currencies"><%= render 'bizcurrencies', :currencies => @CNYcurrencies, :symbol => "¥ " %></div>
+      </section>
+      <div id="buyingpower">
+        <button type="button" class="btn btn-info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<%= t 'jumbotron.table.info' %>">
+          <%= t 'jumbotron.table.directions' %>&nbsp;
+          <i class="fa fa-question-circle fa-lg"></i>
+        </button><script>$(function () { $("[data-toggle='popover']").popover(); });</script>
+      </div>
+    </div><!-- /content -->
+  </div><!-- /tabs -->
+  <script>
+      new CBPFWTabs( document.getElementById( 'tabs' ) );
+  </script>
+  <script>
+    $( document ).ready(function() {
+      var $newdiv1 = $( "<div class='input-group'>"),
+        $newspan1 = $( "<span class='input-group-addon glyphicon glyphicon-search'/>");
+      $('div.dataTables_filter label').prepend( $newspan1 ).addClass("input-group");
+      $('div.dataTables_filter input').addClass("form-control").attr("placeholder", "<%= t 'jumbotron.table.search' %>");
+    });
+  </script>
+
+  <br>
+</div>
+
+<div class="connect">
+  <span><%= t 'connect.title' %></span><br>
+  <a href="https://www.facebook.com/ForeignSavvy" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>&nbsp;
+  <a href="https://twitter.com/ForeignSavvy" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>&nbsp;
+  <a href="http://eepurl.com/WltST" class="btn btn-large btn-primary subscribe"><%= t 'connect.subscribe' %> <i class="fa fa-envelope"></i></a>
+</div>
+
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;<%= t 'panels.title1' %><i class="fa fa-plus-square iconright"></i>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <ul><%= t 'panels.body1_html' %></ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;<%= t 'panels.title2' %><i class="fa fa-plus-square iconright"></i>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul><%= t 'panels.body2_html' %></ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;<%= t 'panels.title3' %><i class="fa fa-plus-square iconright"></i>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul><%= t 'panels.body3_html', :bpi => link_to("The Backpacker Index", "http://www.priceoftravel.com/2222/world-cities-by-price-backpacker-index/"), :bmi => link_to("The Big Mac Index", "http://www.economist.com/content/big-mac-index"), :oan => link_to("Oanda", "http://www.oanda.com/currency/converter/") %></ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="http://www.oanda.com/currency/travel-exchange-rates">
+          <i class="fa fa-check-square-o fa-lg"></i>&nbsp;<a href="http://www.oanda.com/currency/travel-exchange-rates" target="_blank"><%= t 'panels.title4' %></a><i class="fa fa-external-link iconright"></i>
+        </a>
+      </h4>
+    </div>
+  </div>
+</div>
+<!--
+<div class="ourchoice center">
+  <h1><%= t 'ourchoice.title' %><br><span class="glyphicon glyphicon-chevron-down"></span></h1>
+</div>
+-->
+<section>
+  <div class="morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
+    <button type="button"><%= t 'about.title' %></button>
+    <div class="morph-content">
+      <div>
+        <div class="content-style-text">
+          <h2>Foreign Savvy</h2>
+          <p><%= t 'about.text_html' %></p>
+          <span class="icon icon-close"></span><br>
+          <a href="http://eepurl.com/WltST"><%= t 'connect.subscribe' %></a>
+        </div>
+      </div>
+    </div>
+  </div><!-- morph-button -->
+</section>
+
+<script>
+  (function() { 
+    var docElem = window.document.documentElement, didScroll, scrollPosition;
+
+    // trick to prevent scrolling when opening/closing button
+    function noScrollFn() {
+      window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+    }
+
+    function noScroll() {
+      window.removeEventListener( 'scroll', scrollHandler );
+      window.addEventListener( 'scroll', noScrollFn );
+    }
+
+    function scrollFn() {
+      window.addEventListener( 'scroll', scrollHandler );
+    }
+
+    function canScroll() {
+      window.removeEventListener( 'scroll', noScrollFn );
+      scrollFn();
+    }
+
+    function scrollHandler() {
+      if( !didScroll ) {
+        didScroll = true;
+        setTimeout( function() { scrollPage(); }, 60 );
+      }
+    };
+
+    function scrollPage() {
+      scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+      didScroll = false;
+    };
+
+    scrollFn();
+
+    var UIBtnn = new UIMorphingButton( document.querySelector( '.morph-button' ), {
+      closeEl : '.icon-close',
+      onBeforeOpen : function() {
+        // don't allow to scroll
+        noScroll();
+      },
+      onAfterOpen : function() {
+        // can scroll again
+        canScroll();
+      },
+      onBeforeClose : function() {
+        // don't allow to scroll
+        noScroll();
+      },
+      onAfterClose : function() {
+        // can scroll again
+        canScroll();
+      }
+    } );
+  })();
+</script>
+
+<div class="main">
+        <ul id="cbp-bislideshow" class="cbp-bislideshow">
+          <li><%= image_tag("image1__compressed.jpg", alt: "Beach") %></li>
+          <li><%= image_tag("image2__compressed.jpg", alt: "Beach Bus") %></li>
+          <li><%= image_tag("image3__compressed.jpg", alt: "Eiffel Tower") %></li>
+          <li><%= image_tag("image4__compressed.jpg", alt: "Beach Bus") %></li>
+          <li><%= image_tag("image5__compressed.jpg", alt: "Locks in Paris") %></li>
+          <li><%= image_tag("image6__compressed.jpg", alt: "Mountain") %></li>
+        </ul>
+      </div>
+  <script>
+    (function(c,q){var m="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";c.fn.imagesLoaded=function(f){function n(){var b=c(j),a=c(h);d&&(h.length?d.reject(e,b,a):d.resolve(e));c.isFunction(f)&&f.call(g,e,b,a)}function p(b){k(b.target,"error"===b.type)}function k(b,a){b.src===m||-1!==c.inArray(b,l)||(l.push(b),a?h.push(b):j.push(b),c.data(b,"imagesLoaded",{isBroken:a,src:b.src}),r&&d.notifyWith(c(b),[a,e,c(j),c(h)]),e.length===l.length&&(setTimeout(n),e.unbind(".imagesLoaded",
+    p)))}var g=this,d=c.isFunction(c.Deferred)?c.Deferred():0,r=c.isFunction(d.notify),e=g.find("img").add(g.filter("img")),l=[],j=[],h=[];c.isPlainObject(f)&&c.each(f,function(b,a){if("callback"===b)f=a;else if(d)d[b](a)});e.length?e.bind("load.imagesLoaded error.imagesLoaded",p).each(function(b,a){var d=a.src,e=c.data(a,"imagesLoaded");if(e&&e.src===d)k(a,e.isBroken);else if(a.complete&&a.naturalWidth!==q)k(a,0===a.naturalWidth||0===a.naturalHeight);else if(a.readyState||a.complete)a.src=m,a.src=d}):
+    n();return d?d.promise(g):g}})(jQuery);
+  </script>
+  <script>
+    var cbpBGSlideshow=(function(){var l=$("#cbp-bislideshow"),g=l.children("li"),n=g.length,f=$("#cbp-bicontrols"),c={$navPrev:f.find("span.cbp-biprev"),$navNext:f.find("span.cbp-binext"),$navPlayPause:f.find("span.cbp-bipause")},h=0,e,k=true,b=3500;function m(o){l.imagesLoaded(function(){if(Modernizr.backgroundsize){g.each(function(){var p=$(this);p.css("background-image","url("+p.find("img").attr("src")+")")})}else{l.find("img").show()}g.eq(h).css("opacity",1);j();a()})}function j(){c.$navPlayPause.on("click",function(){var o=$(this);if(o.hasClass("cbp-biplay")){o.removeClass("cbp-biplay").addClass("cbp-bipause");a()}else{o.removeClass("cbp-bipause").addClass("cbp-biplay");i()}});c.$navPrev.on("click",function(){d("prev");if(k){a()}});c.$navNext.on("click",function(){d("next");if(k){a()}})}function d(q){var p=g.eq(h);if(q==="next"){h=h<n-1?++h:0}else{if(q==="prev"){h=h>0?--h:n-1}}var o=g.eq(h);p.css("opacity",0);o.css("opacity",1)}function a(){k=true;clearTimeout(e);e=setTimeout(function(){d("next");a()},b)}function i(){k=false;clearTimeout(e)}return{init:m}})();
+  </script>
+  <script>
+    $(function() {
+      cbpBGSlideshow.init();
+    });
+  </script>

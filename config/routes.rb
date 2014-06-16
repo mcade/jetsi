@@ -6,6 +6,7 @@ Jetsi::Application.routes.draw do
   root  'currencies#index'
   match '/privacy',    to: 'static_pages#privacy',    via: 'get'
   match '/terms',   to: 'static_pages#terms',   via: 'get'
+  match '/business',    to: 'currencies#business',    via: 'get'
 
 
 

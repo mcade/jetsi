@@ -13,6 +13,14 @@ class CurrenciesController < ApplicationController
     @CNYcurrencies = Currency.where(:currencyfor => 'CNY')
   end
 
+  def business
+    @USDcurrencies = Currency.where(:currencyfor => 'USD')
+    @EURcurrencies = Currency.where(:currencyfor => 'EUR')
+    @GBPcurrencies = Currency.where(:currencyfor => 'GBP')
+    @JPYcurrencies = Currency.where(:currencyfor => 'JPY')
+    @CNYcurrencies = Currency.where(:currencyfor => 'CNY')
+  end
+
   # GET /currencies/1
   # GET /currencies/1.json
   def show
@@ -81,7 +89,8 @@ class CurrenciesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def currency_params
-      params.require(:currency).permit(:name, :region, :weeklychange, :monthlychange, :yearlychange, :currencyfor, :livingcost, :bmi, :currencyname, :keyid, :wikilink)
+      params.require(:currency).permit(:name, :region, :weeklychange, :monthlychange, :yearlychange, :currencyfor, :livingcost, 
+        :bmi, :currencyname, :keyid, :wikilink, :commute, :utilities, :internet, :apt, :salary, :dinner, :cities)
     end
 
 end

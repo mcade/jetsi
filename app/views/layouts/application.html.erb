@@ -10,32 +10,9 @@
 </head>
 <body>
 	<%= render 'layouts/header' %>
-    <div class="container">
-      <%= yield %>
-      <%= render 'layouts/footer' %>
-    </div>
-  <div class="main">
-        <ul id="cbp-bislideshow" class="cbp-bislideshow">
-          <li><%= image_tag("image1__compressed.jpg", alt: "Beach") %></li>
-          <li><%= image_tag("image2__compressed.jpg", alt: "Beach Bus") %></li>
-          <li><%= image_tag("image3__compressed.jpg", alt: "Eiffel Tower") %></li>
-          <li><%= image_tag("image4__compressed.jpg", alt: "Beach Bus") %></li>
-          <li><%= image_tag("image5__compressed.jpg", alt: "Locks in Paris") %></li>
-          <li><%= image_tag("image6__compressed.jpg", alt: "Mountain") %></li>
-        </ul>
-      </div>
-  <script>
-    (function(c,q){var m="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";c.fn.imagesLoaded=function(f){function n(){var b=c(j),a=c(h);d&&(h.length?d.reject(e,b,a):d.resolve(e));c.isFunction(f)&&f.call(g,e,b,a)}function p(b){k(b.target,"error"===b.type)}function k(b,a){b.src===m||-1!==c.inArray(b,l)||(l.push(b),a?h.push(b):j.push(b),c.data(b,"imagesLoaded",{isBroken:a,src:b.src}),r&&d.notifyWith(c(b),[a,e,c(j),c(h)]),e.length===l.length&&(setTimeout(n),e.unbind(".imagesLoaded",
-    p)))}var g=this,d=c.isFunction(c.Deferred)?c.Deferred():0,r=c.isFunction(d.notify),e=g.find("img").add(g.filter("img")),l=[],j=[],h=[];c.isPlainObject(f)&&c.each(f,function(b,a){if("callback"===b)f=a;else if(d)d[b](a)});e.length?e.bind("load.imagesLoaded error.imagesLoaded",p).each(function(b,a){var d=a.src,e=c.data(a,"imagesLoaded");if(e&&e.src===d)k(a,e.isBroken);else if(a.complete&&a.naturalWidth!==q)k(a,0===a.naturalWidth||0===a.naturalHeight);else if(a.readyState||a.complete)a.src=m,a.src=d}):
-    n();return d?d.promise(g):g}})(jQuery);
-  </script>
-  <script>
-    var cbpBGSlideshow=(function(){var l=$("#cbp-bislideshow"),g=l.children("li"),n=g.length,f=$("#cbp-bicontrols"),c={$navPrev:f.find("span.cbp-biprev"),$navNext:f.find("span.cbp-binext"),$navPlayPause:f.find("span.cbp-bipause")},h=0,e,k=true,b=3500;function m(o){l.imagesLoaded(function(){if(Modernizr.backgroundsize){g.each(function(){var p=$(this);p.css("background-image","url("+p.find("img").attr("src")+")")})}else{l.find("img").show()}g.eq(h).css("opacity",1);j();a()})}function j(){c.$navPlayPause.on("click",function(){var o=$(this);if(o.hasClass("cbp-biplay")){o.removeClass("cbp-biplay").addClass("cbp-bipause");a()}else{o.removeClass("cbp-bipause").addClass("cbp-biplay");i()}});c.$navPrev.on("click",function(){d("prev");if(k){a()}});c.$navNext.on("click",function(){d("next");if(k){a()}})}function d(q){var p=g.eq(h);if(q==="next"){h=h<n-1?++h:0}else{if(q==="prev"){h=h>0?--h:n-1}}var o=g.eq(h);p.css("opacity",0);o.css("opacity",1)}function a(){k=true;clearTimeout(e);e=setTimeout(function(){d("next");a()},b)}function i(){k=false;clearTimeout(e)}return{init:m}})();
-  </script>
-  <script>
-    $(function() {
-      cbpBGSlideshow.init();
-    });
-  </script>
+  <div class="container">
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  </div>
 </body>
 </html>

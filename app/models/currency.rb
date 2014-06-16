@@ -18,12 +18,26 @@ class Currency < ActiveRecord::Base
           		:monthlychange => row[7],
           		:yearlychange => row[8],
           		:currencyfor => row[9],
-              :wikilink => row[10]
+              :wikilink => row[10],
+              :commute => row[11],
+              :utilities => row[12],
+              :internet => row[13],
+              :apt => row[14],
+              :salary => row[15],
+              :dinner => row[16],
+              :cities => row[17]
         		)
       		else
         		currency.update_attributes(
           		:monthlychange => row[7],
-          		:yearlychange => row[8]
+          		:yearlychange => row[8],
+              :commute => row[11],
+              :utilities => row[12],
+              :internet => row[13],
+              :apt => row[14],
+              :salary => row[15],
+              :dinner => row[16],
+              :cities => row[17]
         		)
      		end
      	end

@@ -3,64 +3,129 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 jQuery ->
-  responsiveHelper = undefined
-  breakpointDefinition =
-    tablet: 1024
-    phone: 480
+  if $("#tourist").length isnt 0
+    responsiveHelper = undefined
+    breakpointDefinition =
+      lg: 1920
+      tablet: 1024
+      phone: 480
 
-  tableContainer = $('.display')
-  tableContainer.dataTable
+    tableContainer = $('.display')
+    tableContainer.dataTable
 
-    bPaginate: true
-    # Setup for responsive datatables helper.
-    bAutoWidth: false
-    bStateSave: false
-    bLengthChange: false
-    sDom: '<"top">rt<"bottom"fp><"clear">'
-    oLanguage:
-      sSearch: ""
-      oPaginate:
-        sNext: ""
-        sPrevious: ""
-    # bFilter: false
-    bInfo: false
-    aaSorting: [[
-      5
-      "desc"
-    ]]
+      bPaginate: true
+      # Setup for responsive datatables helper.
+      bAutoWidth: false
+      bStateSave: false
+      bLengthChange: false
+      sDom: '<"top">rt<"bottom"fp><"clear">'
+      oLanguage:
+        sSearch: ""
+        oPaginate:
+          sNext: ""
+          sPrevious: ""
+      # bFilter: false
+      bInfo: false
+      aaSorting: [[
+        5
+        "desc"
+      ]]
 
-    aoColumnDefs: [
-      {
-        sType: "numeric-comma"
-        aTargets: [3,4,5]
-      }
+      aoColumnDefs: [
+        {
+          sType: "numeric-comma"
+          aTargets: [3,4,5]
+        }
 
-      {
-        bSortable: false
-        aTargets: [0,1,2]
-      }
+        {
+          bSortable: false
+          aTargets: [0,1,2]
+        }
 
-      {
-        sClass: "alignleft"
-        aTargets: [0,1]
-      }
-      {
-        sClass: "bigmacwidth"
-        aTargets: [3]
-      }
-    ]
- 
+        {
+          sClass: "alignleft"
+          aTargets: [0,1]
+        }
+        {
+          sClass: "bigmacwidth"
+          aTargets: [3]
+        }
+      ]
+   
 
-    fnPreDrawCallback: ->
-    
-      # Initialize the responsive datatables helper once.
-      @responsiveHelper = new ResponsiveDatatablesHelper(this, breakpointDefinition)  unless @responsiveHelper
-      return
+      fnPreDrawCallback: ->
+      
+        # Initialize the responsive datatables helper once.
+        @responsiveHelper = new ResponsiveDatatablesHelper(this, breakpointDefinition)  unless @responsiveHelper
+        return
 
-    fnRowCallback: (nRow) ->
-      @responsiveHelper.createExpandIcon nRow
-      return
+      fnRowCallback: (nRow) ->
+        @responsiveHelper.createExpandIcon nRow
+        return
 
-    fnDrawCallback: (oSettings) ->
-      @responsiveHelper.respond()
-      return
+      fnDrawCallback: (oSettings) ->
+        @responsiveHelper.respond()
+        return
+  else
+    responsiveHelper = undefined
+    breakpointDefinition =
+      lg: 1920
+      tablet: 1024
+      phone: 480
+
+    tableContainer = $('.display')
+    tableContainer.dataTable
+
+      bPaginate: true
+      # Setup for responsive datatables helper.
+      bAutoWidth: false
+      bStateSave: false
+      bLengthChange: false
+      sDom: '<"top">rt<"bottom"fp><"clear">'
+      oLanguage:
+        sSearch: ""
+        oPaginate:
+          sNext: ""
+          sPrevious: ""
+      # bFilter: false
+      bInfo: false
+      aaSorting: [[
+        10
+        "desc"
+      ]]
+
+      aoColumnDefs: [
+        {
+          sType: "numeric-comma"
+          aTargets: [3,4,5,6,7,8,9,10]
+        }
+
+        {
+          bSortable: false
+          aTargets: [0,1,2]
+        }
+
+        {
+          sClass: "alignleft"
+          aTargets: [0,1]
+        }
+        {
+          sClass: "bigmacwidth"
+          aTargets: [3]
+        }
+      ]
+   
+
+      fnPreDrawCallback: ->
+      
+        # Initialize the responsive datatables helper once.
+        @responsiveHelper = new ResponsiveDatatablesHelper(this, breakpointDefinition)  unless @responsiveHelper
+        return
+
+      fnRowCallback: (nRow) ->
+        @responsiveHelper.createExpandIcon nRow
+        return
+
+      fnDrawCallback: (oSettings) ->
+        @responsiveHelper.respond()
+        return

@@ -1177,6 +1177,9 @@ table.has-columns-hidden > tbody > tr > td > span.responsiveExpander, table.has-
     margin-right: 5%;
   }
 }
+.row-detail .iconright {
+  float: none;
+}
 .iconup {
   color: rgba(0,128,0,0.7);
 }
@@ -1256,4 +1259,19 @@ div.dataTables_paginate {
 
 .linkicon {
   float: right;
+}
+
+.business th {
+  font-size: 0.9em
+}
+
+.util {
+  width: 200px;
+}
+.odd td:last-child, .even td:last-child {
+  min-width: 100px;
+}
+.row-detail {
+  text-align: left;
+  font-size: 0.7em;
 }
