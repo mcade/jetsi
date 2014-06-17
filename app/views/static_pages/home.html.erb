@@ -1,16 +1,21 @@
+<div class="codrops-top">
+	<span><i class="fa fa-globe fa-2x"></i></span>
+	<span class="right"><a class="codrops-icon codrops-icon-drop" href="https://www.facebook.com/ForeignSavvy"><span><i class="fa fa-facebook fa-2x fb"></i></span></a><a class="codrops-icon codrops-icon-drop" href="https://twitter.com/ForeignSavvy"><span><i class="fa fa-twitter fa-2x twit"></i></span></a></span>
+</div>
+
 <div id="boxgallery" class="boxgallery" data-effect="effect-1">
-	<div class="bgpanel"><%= image_tag("1.jpg", alt: "Beach") %></div>
-	<div class="bgpanel"><%= image_tag("2.jpg", alt: "Beach") %></div>
-	<div class="bgpanel"><%= image_tag("3.jpg", alt: "Beach") %></div>
-	<div class="bgpanel"><%= image_tag("4.jpg", alt: "Beach") %></div>
+	<div class="bgpanel"><%= image_tag("image8_compressed.jpg", alt: "Beach") %></div>
+	<div class="bgpanel"><%= image_tag("image9_compressed.jpg", alt: "Beach") %></div>
+	<div class="bgpanel"><%= image_tag("image10_compressed.jpg", alt: "Beach") %></div>
+	<div class="bgpanel"><%= image_tag("image11_compressed.jpg", alt: "Beach") %></div>
 </div>
 
 <div class="homebox">
 	<h1>Foreign Savvy <span>travel more, spend less</span></h1>
 	<div>
-		<a href="index.html">Tourism</a>
-		<a href="index2.html">Business</a>
-		<a href="index3.html">THow it Works</a>
+		<%= link_to "Tourism", tourism_path %>
+		<%= link_to "Business", business_path %>
+		<%= link_to "How it Works", timeline_path %>
 	</div>
 </div>
 

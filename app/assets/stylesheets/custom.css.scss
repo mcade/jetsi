@@ -1781,6 +1781,7 @@ div.dataTables_paginate {
   transform: translate(-50%,-50%);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  color: #fff;
 }
 
 .homebox h1 {
@@ -1796,6 +1797,7 @@ div.dataTables_paginate {
   font-size: 40%;
   line-height: 1.2;
   opacity: 0.7;
+  font-weight: 300;
 }
 
 .homebox div {
@@ -1818,4 +1820,54 @@ div.dataTables_paginate {
 .homebox div a:hover {
   color: #debcc3;
   border-color: #debcc3;
+}
+
+.codrops-top {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 2.2;
+  position: relative;
+  z-index: 2000;
+}
+
+.codrops-top a {
+  display: inline-block;
+  padding: 0.3em 0.7em;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+
+.codrops-top span.right {
+  float: right;
+}
+
+.codrops-top span.right a {
+  display: block;
+  float: left;
+}
+
+.codrops-icon:before {
+  margin: 0 4px;
+  text-transform: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-family: 'FontAwesome';
+  line-height: 1;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-prev:before {
+  content: "\f0ac";
+}
+
+.fb {
+  color: #3B5998;
+}
+.twit {
+  color: #55ACEE;
 }
