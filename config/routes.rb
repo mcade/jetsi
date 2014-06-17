@@ -3,10 +3,11 @@ Jetsi::Application.routes.draw do
     collection { post :import }
   end
 
-  root  'currencies#index'
+  root  'static_pages#home'
   match '/privacy',     to: 'static_pages#privacy',   via: 'get'
   match '/terms',       to: 'static_pages#terms',     via: 'get'
   match '/business',    to: 'currencies#business',    via: 'get'
+  match '/tourism',    to: 'currencies#index',        via: 'get'
   match '/timeline',    to: 'static_pages#timeline',  via: 'get'
   match '/events',      to: 'static_pages#events',    via: 'get'
 

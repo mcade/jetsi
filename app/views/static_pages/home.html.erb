@@ -1,13 +1,19 @@
-<div class="center jumbotron">
-  <h1>Welcome to Jetsi</h1>
-
-	<h2>
-		This is the home page for the
-		<a href="#">Jetsi</a>
-		application.
-	</h2>
-
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+<div id="boxgallery" class="boxgallery" data-effect="effect-1">
+	<div class="bgpanel"><%= image_tag("1.jpg", alt: "Beach") %></div>
+	<div class="bgpanel"><%= image_tag("2.jpg", alt: "Beach") %></div>
+	<div class="bgpanel"><%= image_tag("3.jpg", alt: "Beach") %></div>
+	<div class="bgpanel"><%= image_tag("4.jpg", alt: "Beach") %></div>
 </div>
 
-<%= link_to image_tag("6.png", alt: "Jetsi"), 'http://google.com' %>
+<div class="homebox">
+	<h1>Foreign Savvy <span>travel more, spend less</span></h1>
+	<div>
+		<a href="index.html">Tourism</a>
+		<a href="index2.html">Business</a>
+		<a href="index3.html">THow it Works</a>
+	</div>
+</div>
+
+<script>
+	new BoxesFx( document.getElementById( 'boxgallery' ) );
+</script>
