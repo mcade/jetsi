@@ -4,9 +4,11 @@ Jetsi::Application.routes.draw do
   end
 
   root  'currencies#index'
-  match '/privacy',    to: 'static_pages#privacy',    via: 'get'
-  match '/terms',   to: 'static_pages#terms',   via: 'get'
+  match '/privacy',     to: 'static_pages#privacy',   via: 'get'
+  match '/terms',       to: 'static_pages#terms',     via: 'get'
   match '/business',    to: 'currencies#business',    via: 'get'
+  match '/timeline',    to: 'static_pages#timeline',  via: 'get'
+  match '/events',      to: 'static_pages#events',    via: 'get'
 
 
 
