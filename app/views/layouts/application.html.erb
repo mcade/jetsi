@@ -10,7 +10,8 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<%= render 'layouts/header' unless @skip_header %>
+	<%= render 'layouts/header' unless @header2 %>
+  <%= render 'layouts/header2' if @header2 %>
   <div class="container">
     <%= yield %>
     <%= render 'layouts/footer' unless @skip_footer %>

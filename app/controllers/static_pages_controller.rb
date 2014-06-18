@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-  	@skip_header = true
+  	@header2 = true
   	@skip_footer = true
   end
   def terms

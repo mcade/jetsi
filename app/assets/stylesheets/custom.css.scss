@@ -1815,6 +1815,8 @@ div.dataTables_paginate {
   text-transform: uppercase;
   letter-spacing: 1px;
   width: 165px;
+  line-height: normal;
+  padding: 0.75em 1.1em 0.6em
 }
 
 .homebox div a:hover {
@@ -1822,52 +1824,19 @@ div.dataTables_paginate {
   border-color: #debcc3;
 }
 
-.codrops-top {
-  width: 100%;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 2.2;
-  position: relative;
-  z-index: 2000;
-}
 
-.codrops-top a {
-  display: inline-block;
-  padding: 0.3em 0.7em;
-  text-decoration: none;
-  letter-spacing: 1px;
-  margin: 5px;
-}
-
-.codrops-top span.right {
-  float: right;
-}
-
-.codrops-top span.right a {
-  display: block;
-  float: left;
-}
-
-.codrops-icon:before {
-  margin: 0 4px;
-  text-transform: none;
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  font-family: 'FontAwesome';
-  line-height: 1;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-}
-
-.codrops-icon-prev:before {
-  content: "\f0ac";
-}
-
-.fb {
-  color: #3B5998;
-}
-.twit {
-  color: #55ACEE;
+.header2 nav {
+  z-index: 3000;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  .hplogo {
+    height: 64px;
+    opacity: 0.3;
+  }
+  .dropdown {
+    margin-top: 9px;
+  }
+  #bs-example-navbar-collapse-1 {
+    border: none;
+  }
 }
