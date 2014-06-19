@@ -12,6 +12,9 @@ class StaticPagesController < ApplicationController
   def timeline
   end
 
+  def businesstimeline
+  end
+
   def events
   end
 end

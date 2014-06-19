@@ -54,9 +54,15 @@
       </section>
       <div id="buyingpower">
         <button type="button" class="btn btn-info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<%= t 'jumbotron.table.info' %>">
-          <%= t 'jumbotron.table.directions' %>&nbsp;
+          <%= t 'jumbotron.table.directions' %>
           <i class="fa fa-question-circle fa-lg"></i>
-        </button><script>$(function () { $("[data-toggle='popover']").popover(); });</script>
+        </button>&nbsp;&nbsp;<script>$(function () { $("[data-toggle='popover']").popover(); });</script>
+        <button type="button" class="btn btn-info">
+          <%= link_to 'How do I benefit  <i class="fa fa-question-circle fa-lg"></i>'.html_safe, timeline_path %>
+        </button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-info">
+          <%= link_to 'Where should I go  <i class="fa fa-question-circle fa-lg"></i>'.html_safe, events_path %>
+        </button>&nbsp;&nbsp;
       </div>
     </div><!-- /content -->
   </div><!-- /tabs -->

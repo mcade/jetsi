@@ -9,6 +9,7 @@ Jetsi::Application.routes.draw do
   match '/business',    to: 'currencies#business',    via: 'get'
   match '/tourism',    to: 'currencies#index',        via: 'get'
   match '/timeline',    to: 'static_pages#timeline',  via: 'get'
+  match '/businesstimeline',    to: 'static_pages#businesstimeline',  via: 'get'
   match '/events',      to: 'static_pages#events',    via: 'get'
 
 

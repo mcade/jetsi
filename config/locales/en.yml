@@ -34,7 +34,7 @@ en:
       bigmac:  "Avg. Big Mac Price"
       month:  "This Month"
       year:  "This Year"
-      directions:  "How to use this chart"
+      directions:  "How do I use this"
       info:  "When you travel to a foreign country you convert your currency to the local currency. The stronger your home currency is relative to the foreign currency the better the bargain. To forecast your purchasing power abroad you need to look at the change in the exchange rate, the average cost of a standardized product (like the Big Mac), and the cost of living."
       search:  "search"
   connect:

@@ -1115,6 +1115,13 @@ table.dataTable.order-column tbody tr > .sorting_3 {
 /* buying power popover */
 #buyingpower {
   text-align: center;
+  button {
+    margin-top: 5px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 .popover.bottom > .arrow {
   border-bottom-color: #999999 !important;
@@ -1826,12 +1833,12 @@ div.dataTables_paginate {
 
 
 .header2 nav {
-  z-index: 3000;
   background-color: rgba(0,0,0,0);
   border: none;
   .hplogo {
     height: 64px;
     opacity: 0.3;
+    cursor: default;
   }
   .dropdown {
     margin-top: 9px;
@@ -1839,4 +1846,33 @@ div.dataTables_paginate {
   #bs-example-navbar-collapse-1 {
     border: none;
   }
+}
+header nav {
+  z-index: 3000;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+.blacklogo {
+  padding: 10px 15px;
 }
